@@ -1,0 +1,31 @@
+header {
+  height: 50px;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.Heading {
+  text-decoration: none;
+  font-size: large;
+}
+
+/*==================MEDIA QUERIES (MEDIA DEVICES)===================*/
+@media screen and (max-width: 1024px) {
+  header {
+    max-width: 85%;
+  }
+}
+
+/*==================MEDIA QUERIES (SMALL DEVICES)===================*/
+@media screen and (max-width: 600px) {
+  header {
+    max-width: 95%;
+  }
+}

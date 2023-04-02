@@ -1,0 +1,15 @@
+.result {
+  text-align: center;
+}
+
+.result h2 {
+  margin-top: 20px;
+}
+
+.passed {
+  color: limegreen;
+}
+
+.failed {
+  color: brown;
+}
