@@ -1,12 +1,23 @@
+import { useEffect, useState } from "react";
 import { QuestionType } from "../types";
 
 type Props = {
   data: QuestionType | undefined;
   setOption(i: number): void;
+  onNextClick(): void;
 };
-const SingleQuestion = ({ data, setOption }: Props) => {
-  const handleOptionChange = (i: number) => {
-    setOption(i);
+const SingleQuestion = ({ data, setOption, onNextClick }: Props) => {
+  const [selectedRadio, setSelectedRadio] = useState<number | null>(null);
+
+  useEffect(() => {
+    setSelectedRadio(null);
+  }, [onNextClick]);
+  const isSelected = (i: number): boolean => selectedRadio === i;
+
+  const handleOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let index = parseInt(e.target.value);
+    setSelectedRadio(index);
+    setOption(index);
   };
   return (
     <div>
@@ -18,7 +29,9 @@ const SingleQuestion = ({ data, setOption }: Props) => {
             <input
               type="radio"
               name="option"
-              onChange={() => handleOptionChange(i)}
+              value={i}
+              checked={isSelected(i)}
+              onChange={handleOptionChange}
             />
             {option}
           </li>

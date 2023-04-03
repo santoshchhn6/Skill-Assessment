@@ -26,7 +26,7 @@ const convertMDToJSON = () => {
       // console.log(str[i]);
 
       if (str[i].startsWith("## ")) {
-        heading = str[i].split(" ")[1];
+        heading = str[i].split(" ")[1].split(".")[0];
         // console.log(heading);
       }
 
@@ -46,6 +46,7 @@ const convertMDToJSON = () => {
           correctOptionIndex = 0;
         }
         question = str[i].slice(str[i].indexOf(".") + 2);
+
         // console.log(question);
       }
 
