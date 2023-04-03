@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { QuestionType } from "../types";
 
 type Props = {

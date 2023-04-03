@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Questions from "../data/React.json";
+import Questions from "../data/data/React.json";
 import SingleQuestion from "./SingleQuestion";
 import { QuestionType } from "../types";
 
@@ -25,7 +25,12 @@ const QuestionViewer = () => {
   return (
     <div>
       <SingleQuestion data={currentQuestion} setOption={handleOption} />
-      <button onClick={() => setCurrentQuestion(getRandomQuestion())}></button>
+      <button
+        className="bg-blue-400"
+        onClick={() => setCurrentQuestion(getRandomQuestion())}
+      >
+        Next
+      </button>
     </div>
   );
 };
