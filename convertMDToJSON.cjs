@@ -74,6 +74,9 @@ const convertMDToJSON = () => {
         if (!firstLine) code += "\n" + str[i];
         firstLine = false;
       }
+
+      if (str[i].startsWith("`") && str[i].endsWith("`") && str[i].length > 3)
+        code = str[i];
     }
     //read remaind last one
     let newQuestion = {

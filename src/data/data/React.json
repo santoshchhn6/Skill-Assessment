@@ -34,7 +34,7 @@
   },
   {
     "question": "If you see the following import in a file, what is being used for state management in the component?",
-    "code": "",
+    "code": "`import React, {useState} from 'react';`",
     "options": [
       "React Hooks",
       "stateful components",
@@ -685,7 +685,7 @@
   },
   {
     "question": "What is the first argument, x, that is sent to the `createElement` function?",
-    "code": "",
+    "code": "`React.createElement(x,y,z);`",
     "options": [
       "the element that should be created",
       "the order in which this element should be placed on the page",
@@ -913,7 +913,7 @@
   },
   {
     "question": "How do you add an id of heading to the following h1 element?",
-    "code": "",
+    "code": "`let dish = <h1>Mac and Cheese</h1>; `",
     "options": [
       "`let dish = <h1 id={heading}>Mac and Cheese</h1>;`",
       "`let dish = <h1 id=\"heading\">Mac and Cheese</h1>;`",
