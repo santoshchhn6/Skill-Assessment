@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
-import Questions from "../data/data/React.json";
+// import Questions from "../data/React.json";
 import SingleQuestion from "./SingleQuestion";
 import { QuestionType } from "../types";
+import { useLocation } from "react-router-dom";
 
 const QuestionViewer = () => {
+  const { state: Questions } = useLocation();
+
+  console.log({ Questions });
+
   const totalQuestions = 15;
   const correctAnswersNeedsToPass = 10;
   const timeOutSecond = 90;

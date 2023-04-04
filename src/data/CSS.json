@@ -1,0 +1,1527 @@
+[
+  {
+    "question": "Among these selectors which selector has the highest specificity ranking for selecting the anchor link element?",
+    "code": "ul li a\na\n.example a\ndiv a\n",
+    "options": ["`.example a`", "`div a`", "`a`", "`ul li a`"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Using an attribute selector, how would you select an `<a>` element with a \"title\" attribute?",
+    "code": "",
+    "options": [
+      "`a[title]{...}`",
+      "`a > title {...}`",
+      "`a.title {...}`",
+      "`a=title {...}`"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "What is the CSS selector for an `<a>` tag containing the title attribute?",
+    "code": "",
+    "options": ["`a[title]`", "`a > title`", "`a=title`", "`a.title`"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or if you need to support older browser version. What are two valid techniques used to clear floats?",
+    "code": "",
+    "options": [
+      "Use the \"clearfix hack\" on the floated element and add a float to the parent element.",
+      "Use the overflow property on the floated element or the \"clearfix hack\" on either the floated or parent element.",
+      "Use the \"clearfix hack\" on the floated element or the overflow property on the parent element.",
+      "Use the \"clearfix hack\" on the parent element or use the overflow property with a value other than \"visible.\""
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What element(s) do the following selectors match to?",
+    "code": "1) .nav {\n  ...;\n}\n2) nav {\n  ...;\n}\n3) #nav {\n  ...;\n}\n  1. An element with an ID of \"nav\"\n  2. A nav element\n  3. An element with a class of \"nav\"\n  1. An element with an class of \"nav\"\n  2. A nav element\n  3. An element with a id of \"nav\"\n  1. An element with an class of \"nav\"\n  2. A nav element\n  3. An div with a id of \"nav\"\n",
+    "options": ["A", "B `They all target the same nav element.`", "C", "D"],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "When adding transparency styles, what is the difference between using the opacity property versus the background property with an `rgba()` value?",
+    "code": "",
+    "options": [
+      "Opacity specifies the level of transparency of the child elements. Background with an `rgba()` value applies transparency to the background color only.",
+      "Opacity applies transparency to the background color only. Background with an `rgba()` value specifies the level of transparency of an element, as a whole, including its content.",
+      "Opacity specifies the level of transparency of an element, including its content. Background with an `rgba()` value applies transparency to the background color only.",
+      "Opacity applies transparency to the parent and child elements. Background with an `rgba()` value specifies the level of transparency of the parent element only."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "What is true of block and inline elements? (_Alternative_: Which statement about block and inline elements is true?)",
+    "code": "",
+    "options": [
+      "By default, block elements are the same height and width as the content container between their tags; inline elements span the entire width of its container.",
+      "By default, block elements span the entire width of its container; inline elements are the same height and width as the content contained between their tags.",
+      "A `<nav>` element is an example of an inline element. `<header>` is an example of a block element.",
+      "A `<span>` is an example of a block element. `<div>` is an example of an inline element."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "CSS grid introduced a new length unit, fr, to create flexible grid tracks. Referring to the code sample below, what will the widths of the three columns be?",
+    "code": ".grid {\n  display: grid;\n  width: 500px;\n  grid-template-columns: 50px 1fr 2fr;\n}\n",
+    "options": [
+      "The first column will have a width of 50px. The second column will be 50px wide and the third column will be 100px wide.",
+      "The first column will have a width of 50px. The second column will be 150px wide and the third column will be 300px wide.",
+      "The first column will have a width of 50px. The second column will be 300px wide and the third column will be 150px wide.",
+      "The first column will have a width of 50px. The second column will be 500px wide and the third column will be 1000px wide."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "If the width of the container is 500 pixels, what would the width of the three columns be in this layout?",
+    "code": "`.grid { display: grid; grid-template-columns: 50px 1fr 2fr; }`",
+    "options": [
+      "50px, 150px, 300px",
+      "50px, 200px, 300px",
+      "50px, 100px, 200px",
+      "50px, 50px, 100px"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "What is the line-height property primarily used for?",
+    "code": "",
+    "options": [
+      "to control the height of the space between two lines of content",
+      "to control the height of the space between heading elements",
+      "to control the height of the character size",
+      "to control the width of the space between characters"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Three of these choices are true about class selectors. Which is NOT true?",
+    "code": "",
+    "options": [
+      "Multiple classes can be used within the same element.",
+      "The same class can be used multiple times per page.",
+      "Class selectors begin with a leading period",
+      "Classes can be used multiple times per page but not within the same element."
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What is not true about class selectors?",
+    "code": "",
+    "options": [
+      "Only one class value can be assigned to an element.",
+      "An element can have multiple class value.",
+      "Class selectors are marked with a leading period.",
+      "More than one element can have the same class value."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "There are many properties that can be used to align elements and create page layouts such as float, position, flexbox and grid. Of these four properties, which one should be used to align a global navigation bar which stays fixed at the top of the page?",
+    "code": "",
+    "options": ["position", "flexbox", "grid", "float"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "In the shorthand example below, which individual background properties are represented?",
+    "code": "background: blue url(image.jpg) no-repeat scroll 0px 0px;\nbackground-color: blue;\nbackground-image: url(image.jpg);\nbackground-repeat: no-repeat;\nbackground-attachment: scroll;\nbackground-position: 0px 0px;\nbackground-color: blue;\nbackground-img: url(image.jpg);\nbackground-position: no-repeat;\nbackground-scroll: scroll;\nbackground-size: 0px 0px;\nbackground-color: blue;\nbackground-src: url(image.jpg);\nbackground-repeat: no-repeat;\nbackground-wrap: scroll;\nbackground-position: 0px 0px;\nbackground-color: blue;\nbackground-src: url(image.jpg);\nbackground-repeat: no-repeat;\nbackground-scroll: scroll;\nbackground-position: 0px 0px;\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "In this example, according to cascading and specificity rules, what color will the link be?",
+    "code": ".example {\n  color: yellow;\n}\nul li a {\n  color: blue;\n}\nul a {\n  color: green;\n}\na {\n  color: red;\n}\n<ul>\n  <li><a href=\"#\" class=\"example\">link</a></li>\n  <li>list item</li>\n  <li>list item</li>\n</ul>\n",
+    "options": ["green", "yellow", "blue", "red"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index property can be used to specify the z-order of overlapping elements. Which set of statements about the z-index property are true?",
+    "code": "",
+    "options": [
+      "Larger z-index values appear on top of elements with a lower z-index value. Negative and positive numbers can be used. z-index can only be used on positioned elements.",
+      "Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index must also be used with positioned elements.",
+      "Larger z-index values appear on top of elements with a lower z-index value. Only positive numbers can be used. z-index must also be used with positioned elements.",
+      "Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "When elements within a container overlap, the z-index property can be used to indicate how those items are stacked on top of each other. Which set of statements is true?",
+    "code": "  1. Larger z-index values appear on top elements with a lower z-index value.\n  2. Negative and positive number can be used.\n  3. z-index can be used only on positioned elements.\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\n  2. Negative and positive numbers can be used.\n  3. z-index can be used with or without positioned elements.\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\n  2. Negative and positive number can be used.\n  3. z-index must also be used with positioned elements.\n  1. Larger z-index values appear on top of elements with a lower z-index value.\n  2. Only positive number can be used.\n  3. z-index must also be used with positioned elements.\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "What is the difference between the following line-height settings?",
+    "code": "line-height: 20px;\nline-height: 2;\n",
+    "options": [
+      "The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to twice the size of the corresponding font-size value.",
+      "The value of 20px will set the line-height to 20px. The value of 2 is not valid.",
+      "The value of 20px will set the line-height to 20px. The value of 2 will default to a value of 2px.",
+      "The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to 20% of the corresponding font-size value."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "In the following example, what color will paragraph one and paragraph two be? (_Alternative_: In this example, what color will paragraphs one and two be?)",
+    "code": "<section>\n  <p>paragraph one</p>\n</section>\n\n<p>paragraph two</p>\nsection p {\n  color: red;\n}\nsection + p {\n  color: blue;\n}\n",
+    "options": [
+      "Paragraph one will be blue, paragraph two will be red.",
+      "Both paragraphs will be blue.",
+      "Paragraphs one will be red, paragraph two will be blue.",
+      "Both paragraphs will be red."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "What are three valid ways of adding CSS to an HTML page?",
+    "code": "  1. External; CSS is written in a separate file.\n  2. Inline; CSS is added to the <head> of the HTML page.\n  3. Internal; CSS is included within the HTML tags.\n  1. External; CSS is written in a separate file and is linked within the <header> element of the HTML file.\n  2. Inline; CSS is added to the HTML tag.\n  3. Internal; CSS is included within the <header> element of the HTML file.\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\n  2. Internal; CSS is included within the <header> element of the HTML file.\n  3. Inline; CSS is added to the HTML tag.\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\n  2. Inline; CSS is added to the HTML tag.\n  3. Internal; CSS is included within the <head> element of the HTML file.\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which of the following is true of the SVG image format? (_Alternative_: Which statement about the SVG image format is true?)",
+    "code": "",
+    "options": [
+      "CSS can be applied to SVGs but JavaScript cannot be.",
+      "SVGs work best for creating 3D graphics.",
+      "SVGs can be created as a vector graphic or coded using SVG specific elements such as &#x3C;svg&#x3E;, &#x3C;line&#x3E;, and &#x3C;ellipse&#x3E;.",
+      "SVGs are a HAML-based markup language for creating vector graphics."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "In the example below, when will the color pink be applied to the anchor element?",
+    "code": "a:active {\n  color: pink;\n}\n",
+    "options": [
+      "The color of the link will display as pink after its been clicked or if the mouse is hovering over the link.",
+      "The color of the link will display as pink on mouse hover.",
+      "The color of the link will display as pink while the link is being clicked but before the mouse click is released.",
+      "The color of the link will display as pink before it has been clicked."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "To change the color of an SVG using CSS, which property is used?",
+    "code": "",
+    "options": [
+      "Use background-fill to set the color inside the object and stroke or border to set the color of the border.",
+      "The color cannot be changed with CSS.",
+      "Use fill or background to set the color inside the object and stroke to set the color of the border.",
+      "Use fill to set the color inside the object and stroke to set the color of the border."
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "When using position: fixed, what will the element always be positioned relative to?",
+    "code": "",
+    "options": [
+      "the closest element with position: relative",
+      "the viewport",
+      "the parent element",
+      "the wrapper element"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "By default, a background image will repeat \\_",
+    "code": "",
+    "options": [
+      "only if the background-repeat property is set to repeat",
+      "indefinitely, vertically, and horizontally",
+      "indefinitely on the horizontal axis only",
+      "once, on the x and y axis"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "When using media queries, media types are used to target a device category. Which choice lists current valid media types?",
+    "code": "",
+    "options": [
+      "print, screen, aural",
+      "print, screen, television",
+      "print, screen, speech",
+      "print, speech, device"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "How would you make the first letter of every paragraph on the page red?",
+    "code": "",
+    "options": [
+      "p::first-letter { color: red; }",
+      "p:first-letter { color: red; }",
+      "first-letter::p { color: red; }",
+      "first-letter:p { color: red; }"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "In this example, what is the selector, property, and value?",
+    "code": "p {\n  color: #000000;\n}\n  \"p\" is the selector\n  \"#000000\" is the property\n  \"color\" is the value\n  \"p\" is the selector\n  \"color\" is the property\n  \"#000000\" is the value\n  \"color\" is the selector\n  \"#000000\" is the property\n  \"#p\" is the value\n  \"color\" is the selector\n  \"p\" is the property\n  \"#000000\" is the value\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "What is the rem unit based on?",
+    "code": "",
+    "options": [
+      "The rem unit is relative to the font-size of the p element.",
+      "You have to set the value for the rem unit by writing a declaration such as rem { font-size: 1 Spx; }",
+      "The rem unit is relative to the font-size of the containing (parent) element.",
+      "The rem unit is relative to the font-size of the root element of the page."
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which choice would give a block element rounded corners?",
+    "code": "",
+    "options": [
+      "`corner-radius: 10px;`",
+      "`border-corner: 10px;`",
+      "`corner-curve: 10px;`",
+      "`border-radius: 10px;`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "In the following media query example, what conditions are being targeted?",
+    "code": "@media (min-width: 1024px), screen and (orientation: landscape) { … }\n",
+    "options": [
+      "The rule will apply to a device that has either a width of 1024px or wider, or is a screen device in landscape mode.",
+      "The rule will apply to a device that has a width of 1024px or narrower and is a screen device in landscape mode.",
+      "The rule will apply to a device that has a width of 1024px or wider and is a screen device in landscape mode.",
+      "The rule will apply to a device that has a width of 1024px or narrower, or is a screen device in landscape mode."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element's transformation origin. By default, what is the location of the origin?",
+    "code": "",
+    "options": [
+      "the top left corner of the element",
+      "the center of the element",
+      "the top right corner of the element",
+      "the bottom left of the element"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Which of the following is not a valid color value? (_Alternative:_ Which choice is not a valid color value?)",
+    "code": "",
+    "options": [
+      "`color: #000`",
+      "`color: rgb(0,0,0)`",
+      "`color: #000000`",
+      "`color: 000000`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What is the vertical gap between the two elements below?",
+    "code": "<div style=\"margin-bottom: 2rem;\">Div 1</div>\n<div style=\"margin-top: 2rem;\">Div 2</div>\n",
+    "options": ["2rem", "32px", "64px", "4rem"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "When using the Flexbox method, what property and value is used to display flex items in a column?",
+    "code": "",
+    "options": [
+      "flex-flow: column; or flex-direction: column",
+      "flex-flow: column;",
+      "flex-column: auto;",
+      "flex-direction: column;"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which type of declaration will take precedence?",
+    "code": "",
+    "options": [
+      "any declarations in user-agent stylesheets",
+      "important declarations in user stylesheets",
+      "normal declarations in author stylesheets",
+      "important declarations in author stylesheets"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "The flex-direction property is used to specify the direction that flex items are displayed. What are the values used to specify the direction of the items in the following examples?",
+    "code": "",
+    "options": ["", "", "", ""],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to example below, which elements will the styles be applied to?",
+    "code": "h2 ~ p {\n  color: blue;\n}\nh2 + p {\n  background: beige;\n}\n<section>\n  <p>paragraph 1</p>\n  <h2>Heading</h2>\n  <p>paragraph 2</p>\n  <p>paragraph 3</p>\n</section>\n",
+    "options": [
+      "Paragraphs 2 and 3 will be blue. The h2 and paragraph 2 will have a beige background.",
+      "Paragraphs 2, and 3 will be blue, and paragraph 2 will have a beige background.",
+      "Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Which element(s) will be blue?",
+    "code": "h2 ~ p {\n  color: blue;\n}\n<section>\n  <p>P1</p>\n  <h2>H2</h2>\n  <p>P3</p>\n  <p>P4</p>\n</section>\n",
+    "options": ["P3", "P1, P3 and P4", "P3 and P4", "P1"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "When using flexbox, the \"justify-content\" property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?",
+    "code": "",
+    "options": [
+      "justify-content: space-around;",
+      "justify-content: center;",
+      "justify-content: auto;",
+      "justify-content: space-between;"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "There are many advantages to using icon fonts. What is one of those advantages?",
+    "code": "",
+    "options": [
+      "Icon fonts increase accessibility.",
+      "Icon fonts can be used to replace custom fonts.",
+      "Icon fonts can be styled with typography related properties such as font-size and color.",
+      "Icon fonts are also web safe fonts."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "What is the difference between `display:none` and `visibility:hidden`?",
+    "code": "",
+    "options": [
+      "Both will hide the element on the page, but display:none has greater browser support. visibility:hidden is a new property and does not have the best browser support",
+      "display:none hides the elements but maintains the space it previously occupied. visibility:hidden will hide the element from view and remove it from the normal flow of the document",
+      "display:none hides the element from view and removes it from the normal flow of the document. visibility:hidden will hide the element but maintains the space it previously occupied.",
+      "There is no difference; both will hide the element on the page"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "What selector and property would you use to scale an element to be 50% smaller on hover?",
+    "code": "",
+    "options": [
+      "element:hover {scale: 0.5;}",
+      "element:hover {transform: scale(0.5);}",
+      "element:hover {scale: 50%;}",
+      "element:hover {transform: scale(50%);}"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which statement regarding icon fonts is true?",
+    "code": "",
+    "options": [
+      "Icon fonts can be inserted only using JavaScript.",
+      "Icon fonts are inserted as inline images.",
+      "Icon fonts require browser extensions.",
+      "Icon fonts can be styled with typography-related properties such as font-size and color."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "The values for the font-weight property can be keywords or numbers. For each numbered value below, what is the associated keyword?",
+    "code": "font-weight: 400;\nfont-weight: 700;\n",
+    "options": [
+      "bold; normal",
+      "normal; bold",
+      "light; normal",
+      "normal; bolder"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Using the :nth-child pseudo class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?",
+    "code": "li:nth-child(3 + 2n) {\n  margin: 0 5 px;\n}\nli:nth-child(3n + 2) {\n  margin: 0 5 px;\n}\nli:nth-child(2),\nli:nth-child(5),\nli:nth-child(8) {\n  margin: 0 5 px;\n}\nli:nth-child(2n + 3) {\n  margin: 0 5 px;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which selector would select only internal links within the current page?",
+    "code": "",
+    "options": [
+      "`a[href=\"#\"] {...}`",
+      "`a[href~=\"#\"]`",
+      "`a[href^=\"#\"]`",
+      "`a[href=\"#\"]`"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "What is the difference between the margin and padding properties?",
+    "code": "",
+    "options": [
+      "Margin adds space around and inside of an element; padding adds space only inside of an element.",
+      "Margin adds space around an element; padding adds space inside of an element.",
+      "Margin adds a line around an element, padding adds space inside of an element.",
+      "Margin adds space inside of an element, padding adds space around an element."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "What is not a valid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?",
+    "code": "",
+    "options": [
+      "padding: 10px 10px 0px 0px;",
+      "padding: 10px 0px;",
+      "padding: 10px 0;",
+      "padding: 10px 0px 10px 0px;"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Is there an error in this code? If so, find the best description of the problem",
+    "code": "@font-face {\n  font-family: 'Avenir', sans-serif;\n  src: url('avenir.woff2') format('woff2'), url('avenir.woff') format('woff');\n}\n",
+    "options": [
+      "The font file formats are not supported in modern browsers.",
+      "The src attribute requires a comma between the URL and format values.",
+      "There are no errors in the example.",
+      "The sans-serif inclusion is problematic."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which style places an element at a fixed location within its container?",
+    "code": "",
+    "options": [
+      "position: absolute;",
+      "display: flex;",
+      "display: block;",
+      "float: left;"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "The calc() CSS function is often used for calculating relative values. In the example below, what is the specified margin-left value?",
+    "code": ".example {\n  margin-left: calc(5% + 5px);\n}\n",
+    "options": [
+      "The left margin value is equal to 5% of its parents element's width plus 5px",
+      "The left margin value is equal to 5% of the viewport width plus 5px",
+      "The left margin value is equal to 5% of the closest positioned element's width plus 5px",
+      "The left margin value is equal to 5% of the selected element's width (.example) plus 5px"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which code would you use to absolutely position an element of the logo class?",
+    "code": "",
+    "options": [
+      "`.logo { position: absolute; left: 100px; top: 150px; }`",
+      "`.logo { position: absolute; margin-left: 100px; margin-top: 150px; }`",
+      "`.logo { position: absolute; padding-left: 100px; padding-top: 150px; }`",
+      "`.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "In this example, what color will Paragraph 1 be?",
+    "code": "p:first-of-type {\n  color: red;\n}\np {\n  color: blue;\n}\n.container {\n  color: yellow;\n}\np:first-child {\n  color: green;\n}\n<div class=\"container\">\n  <h1>Heading</h1>\n  <p>Paragraph1</p>\n  <p>Paragraph2</p>\n</div>\n",
+    "options": ["blue", "green", "red", "yellow"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "What is the `::placeholder pseudo-element` used for?",
+    "code": "",
+    "options": [
+      "It is used to format the appearance of placeholder text within a form control.",
+      "It specifies the default input text for a form control.",
+      "It writes text content into a hyperlink tooltip.",
+      "It writes text content into any page element."
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which statement is true of the single colon (`:`) or double colon (`::`) notations for pseudo-elements-for example, `::before` and `:before`?",
+    "code": "",
+    "options": [
+      "All browsers support single and double colons for new and older pseudo-elements. So you can use either but it is convention to use single colons for consistency.",
+      "In CSS3, the double colon notation (`::`) was introduced to create a consistency between pseudo-elements from pseudo-classes. For newer browsers, use the double colon notation. For IE8 and below, using single colon notation (`:`).",
+      "Only the new CSS3 pseudo-elements require the double colon notation while the CSS2 pseudo-elements do not.",
+      "In CSS3, the double colon notation (`::`) was introduced to differentiate pseudo-elements from pseudo-classes. However, modern browsers support both formats. Older browsers such as IE8 and below do not."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which choice is not valid value for the font-style property?",
+    "code": "",
+    "options": ["normal", "italic", "none", "oblique"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "When would you use the @font-face method?",
+    "code": "",
+    "options": [
+      "to set the font size of the text",
+      "to load custom fonts into stylesheet",
+      "to change the name of the font declared in the font-family",
+      "to set the color of the text"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "You have a large image that needs to fit into a 400 x 200 pixel area. What should you resize the image to if your users are using Retina displays?",
+    "code": "",
+    "options": [
+      "2000 x 1400 pixels",
+      "200 x 100 pixels",
+      "800 x 400 pixels",
+      "400 x 200 pixels"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "In Chrome's Developer Tools view, where are the default styles listed?",
+    "code": "",
+    "options": [
+      "under the User Agent Stylesheet section on the right",
+      "in the third panel under the Layout tab",
+      "under the HTML view on the left",
+      "in the middle panel"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "While HTML controls document structure, CSS controls `___`.",
+    "code": "",
+    "options": [
+      "semantic meaning",
+      "content meaning",
+      "document structure",
+      "content appearance"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "What is the recommended name you should give the folder that holds your project's images?",
+    "code": "",
+    "options": ["images", "#images", "Images", "my images"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What is an advantage of using inline CSS?",
+    "code": "",
+    "options": [
+      "It is easier to manage.",
+      "It is easier to add multiple styles through it.",
+      "It can be used to quickly test local CSS overrides.",
+      "It reduces conflict with other CSS definition methods."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which W3C status code represents a CSS specification that is fully implemented by modern browsers?",
+    "code": "",
+    "options": [
+      "Proposed Recommendation",
+      "Working Draft",
+      "Recommendation",
+      "Candidate Recommendation"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Are any of the following declarations invalid?",
+    "code": "color: red; /* declaration A */\nfont-size: 1em; /* declaration B */\npadding: 10px 0; /* declaration C */\n",
+    "options": [
+      "Declaration A is invalid.",
+      "Declaration B is invalid.",
+      "Declaration C is invalid.",
+      "All declarations are valid."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which CSS will cause your links to have a solid blue background that changes to semitransparent on hover?",
+    "code": "a:link {\n  background: #0000ff;\n}\na:hover {\n  background: rgba(0, 0, 255, 0.5);\n}\na {\n  color: blue;\n}\na:hover {\n  background: white;\n}\na:link {\n  background: blue;\n}\na:hover {\n  color: rgba(0, 0, 255, 0.5);\n}\na:hover {\n  background: rgba(blue, 50%);\n}\na:link {\n  background: rgba(blue);\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which CSS rule takes precedence over the others listed?",
+    "code": "",
+    "options": [
+      "`div.sidebar {}`",
+      "`* {}`",
+      "`div#sidebar2 p {}`",
+      "`.sidebar p {}`"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "The body of your page includes some HTML sections. How will it look with the following CSS applied?",
+    "code": "body {\n  background: #ffffff; /* white */\n}\nsection {\n  background: #0000ff; /* blue */\n  height: 200px;\n}\n",
+    "options": [
+      "blue sections on a white background",
+      "Yellow sections on a blue background",
+      "Green sections on a white background",
+      "blue sections on a red background"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which CSS keyword can you use to override standard source order and specificity rules?",
+    "code": "",
+    "options": ["`!elevate!`", "`*prime`", "`override`", "`!important`"],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "You can use the `___` pseudo-class to set a different color on a link if it was clicked on.",
+    "code": "",
+    "options": ["`a:visited`", "`a:hover`", "`a:link`", "`a:focus`"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which color will look the brightest on your screen, assuming the background is white?",
+    "code": "",
+    "options": [
+      "`background-color: #aaa;`",
+      "`background-color: #999999;`",
+      "`background-color: rgba(170,170,170,0.5);`",
+      "`background-color: rgba(170,170,170,0.2);`"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which CSS selector can you use to select all elements on your page associated with the two classes header and clear?",
+    "code": "",
+    "options": [
+      "`.\"header clear\" {}`",
+      "`header#clear {}`",
+      "`.header.clear {}`",
+      "`.header clear {}`"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "A universal selector is specified using a(n) `___`.",
+    "code": "",
+    "options": [
+      "\"h1\" string",
+      "\"a\" character",
+      "\"p\" character",
+      "\"\\*\" character"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "In the following CSS code, `'h1'` is the `___`, while `'color'` is the `___`.",
+    "code": "h1 {\n  color: red;\n}\n",
+    "options": [
+      "property; declaration",
+      "declaration; rule",
+      "\"p\" character",
+      "selector; property"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "What is an alternate way to define the following CSS rule?",
+    "code": "font-weight: bold;\n",
+    "options": [
+      "font-weight: 400;",
+      "font-weight: medium;",
+      "font-weight: 700;",
+      "font-weight: Black;"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "You want your styling to be based on a font stack consisting of three fonts. Where should the generic font for your font family be specified?",
+    "code": "",
+    "options": [
+      "It should be the first one on the list.",
+      "Generic fonts are discouraged from this list.",
+      "It should be the last one on the list.",
+      "It should be the second one on the list."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "When using a font stack to declare the font family, in what order should the values appear?",
+    "code": "",
+    "options": [
+      "The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.",
+      "The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.",
+      "The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.",
+      "The first value is the first choice, followed by a maximum of three alternatives."
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What is one disadvantage of using a web font service?",
+    "code": "",
+    "options": [
+      "It requires you to host font files on your own server.",
+      "It uses more of your site's bandwidth.",
+      "It offers a narrow selection of custom fonts.",
+      "It is not always a free service."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "How do you add Google fonts to your project?",
+    "code": "",
+    "options": [
+      "by using an HTML link element referring to a Google-provided CSS",
+      "by embedding the font file directly into the project's master JavaScript",
+      "by using a Google-specific CSS syntax that directly links to the desired font file",
+      "by using a standard font-face CSS definition sourcing a font file on Google's servers"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Using the following HTML and CSS example, what will equivalent pixel value be for .em and .rem elements?",
+    "code": "html {\n  font-size: 10px;\n}\nbody {\n  font-size: 2rem;\n}\n.rem {\n  font-size: 1.5rem;\n}\n.em {\n  font-size: 2em;\n}\n<body>\n  <p class=\"rem\"></p>\n  <p class=\"em\"></p>\n</body>\n",
+    "options": [
+      "The .rem will be equivalent to 25px; the .em value will be 20px.",
+      "The .rem will be equivalent to 15px; the .em value will be 20px.",
+      "The .rem will be equivalent to 15px; the .em value will be 40px.",
+      "The .rem will be equivalent to 20px; the .em value will be 40px."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "What property is used to adjust the space between text characters?",
+    "code": "",
+    "options": [
+      "`font-style`",
+      "`text-transform`",
+      "`font-variant`",
+      "`letter-spacing`"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "What is the correct syntax for changing the cursor from an arrow to a pointing hand when it interacts with a named element?",
+    "code": "",
+    "options": [
+      "`.element {cursor: pointer;}`",
+      "`.element {cursor: hand;}`",
+      "`.element {cursor: move-hand;}`",
+      "`.element {cursor: pointer-hand;}`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What is the effect of this style?",
+    "code": "background-position: 10% 50%;\n",
+    "options": [
+      "The background image is placed 10% from the left and 50% from the top of its container",
+      "The background image is placed 10% from the bottom and 50% from the left of its container",
+      "The background image is placed 10% from the right and 50% from the bottom of its container",
+      "The background image is placed 10% from the top and 50% from the left of its container"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "How will the grid items display?",
+    "code": "grid-template-columns: 2fr 1fr;\n",
+    "options": [
+      "The first column will be twice the height of the second column, and will be as wide as the content.",
+      "The first column will be half the size of the container, and the second column will absorb the remaining space.",
+      "The first column will be twice as wide as the second column, and will fit proportionally within the grid container.",
+      "The first column will be twice the width and height of the second column, and will fit proportionally within the grid container."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Which style rule would make the image 50% smaller during a hover?",
+    "code": "<img id=\"photo\" alt=\"\" src=\"...\" />\n",
+    "options": [
+      "img#photo:hover {scale: 0.5;}",
+      "img#photo:hover {transform: scale(0.5);}",
+      "img#photo {hover-scale: 0.5;}",
+      "img#photo:hover {size: smaller;}"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which CSS properties can you use to create a rounded corner on just the top-left and top-right corners of an element?",
+    "code": "A. border-radius: 10px 10px 0 0;\nB. border-top-left-radius: 10px; and border-top-right-radius: 10px;\nC. border-radius: 10px 0;\nD. border-top-radius: 10px;\n",
+    "options": ["A and C", "C and D", "B and C", "A and B"],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Review the HTML example below. Then choose the list of selectors that select the \\<p>, from lowest to highest specificity.",
+    "code": "<section>\n  <p class=\"example\">...</p>\n</section>\n1. section \\* {\n  ...;\n}\n2. [class*='example'] {\n  ...;\n}\n3. p.example {\n  ...;\n}\n4. section p {\n  ...;\n}\n1. p {\n  ...;\n}\n2. p.example {\n  ...;\n}\n3. section p {\n  ...;\n}\n4. [class*='example'] {\n  ...;\n}\n1. p.example {\n  ...;\n}\n2. section p {\n  ...;\n}\n3. [class*='example'] {\n  ...;\n}\n4. section \\* {\n  ...;\n}\n1. p {\n  ...;\n}\n2. section p {\n  ...;\n}\n3. [class*='example'] {\n  ...;\n}\n4. p.example {\n  ...;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which property is used to create a drop shadow effect on an HTML element?",
+    "code": "",
+    "options": [
+      "element-shadow",
+      "outer-shadow",
+      "dropbox-shadow",
+      "box-shadow"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "What is the correct selector for targeting all text inputs that are not disabled?",
+    "code": "`input[type=\"text\"]` selects all the input with type text, and `:not([disabled])` selects all the elements not having the attribute \"disabled\". Combining both only selects all the input elements with type attribte as \"text\" and not having \"disabled\" attribute.`",
+    "options": [
+      "`input[type=\"text\"]:not([disabled]) {...}`",
+      "`input[type=\"text\"]:not(\"disabled\") {...}`",
+      "`input[type*=\"text\"]:not([disabled=\"disabled\"]) {...}`",
+      "`input[type=\"text\"]:not([type=\"disabled\"]) {...}`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "How can you create a semi-transparent background color?",
+    "code": "",
+    "options": [
+      "`background-color: hsl(0, 0, 0, 0.5);`",
+      "`background-color: rgbx(0, 0, 0, 0.5);`",
+      "`background-color: rgba(0, 0, 0, 0.5);`",
+      "`background-color: rgba(0, 0, 0, 1);`"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Using this HTML markup, how would you select only the headings contained within the `<header>` element?",
+    "code": "<header>\n  <h1>Heading 1</h1>\n  <h2>Heading 2</h2>\n</header>\n<h2>Heading 2</h2>\n",
+    "options": [
+      "`header h1, header h2 {...}`",
+      "`header h1 + header h2 {...}`",
+      "`header h1, h2 {...}`",
+      "`h1, h2 {...}`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Suppose you want to have a list of items (.item) displayed in a row and in reverse order using flexbox. What is the error in the CSS below?",
+    "code": ".container {\n  display: flex;\n}\n.item {\n  border: 1px solid red;\n  flex-direction: row-reverse;\n}\n",
+    "options": [
+      "The value for flex-direction should be reverse-row.",
+      "The .container element should have a property of flex: display.",
+      "The flex-direction property should be declared in the container.",
+      "The display value should be flex-inline to display the items in a row."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Which choice is not a valid transition?",
+    "code": "",
+    "options": [
+      "`transition: margin 1000ms ease-in-out;`",
+      "`transition: color 1.3s ease-in;`",
+      "`transition: position 400ms linear;`",
+      "`transition: opacity 1s ease-in;`"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "In this example, what color will the paragraphs be and why?",
+    "code": "article p {\n  color: blue;\n}\narticle > p {\n  color: green;\n}\n<article>\n  <p>Paragraph 1</p>\n\n  <aside>\n    <p>Paragraph 2</p>\n  </aside>\n</article>\n",
+    "options": [
+      "Paragraph 1 will be blue. Paragraph 2 will be green.",
+      "Both paragraphs will be green.",
+      "Paragraph 1 will be green. Paragraph 2 will be blue.",
+      "Both paragraphs will be blue."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Review the declaration of border style shown below. What is the corresponding longhand syntax?",
+    "code": "border: 1px solid red;\nborder-size: 1px;\nborder-style: solid;\nborder-color: red;\nborder-size: 1px;\nborder-type: solid;\nborder-color: red;\nborder-width: 1px;\nborder-style: solid;\nborder-color: red;\nborder-width: 1px;\nborder-line: solid;\nborder-color: red;\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Pseudo-classes are used to `_`.",
+    "code": "",
+    "options": [
+      "style the state of the selected element",
+      "insert presentational content",
+      "style a specific part of the selected element",
+      "style the elements using class selectors"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "In this example, what styles will be applied to which elements?",
+    "code": "section {\n  color: gray;\n}\n<section>\n  <p>paragraph</p>\n  <a href=\"#\">link</a>\n</section>\n",
+    "options": [
+      "The paragraph and link will be gray.",
+      "The background color of the section element will be gray.",
+      "The paragraph will be gray. The link will be the browser default, black.",
+      "Only the paragraph will be gray."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which answer is an example of a type selector (also sometimes referred to as an element selector)?",
+    "code": "",
+    "options": [
+      "`.header {...}`",
+      "`header {...}`",
+      "`#header {...}`",
+      "`header > h1 {...}`"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "What is the correct order for listing different link states in a website so those states display correctly on the page?",
+    "code": "  a\n  a:hover\n  :link\n  :visited\n  :hover\n  :active\n  :focus\n  :active\n  :focus\n  :hover\n  :link\n  :visited\n  :link\n  :visited\n  :focus\n  :hover\n  :active\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which selector is used to select the paragraph element that is a direct descendent of section?",
+    "code": "",
+    "options": [
+      "`section * p`",
+      "`section + p`",
+      "`section ~ p`",
+      "`section > p`"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "For this code, what is the font color of the hypertext link?",
+    "code": "ul {\n  --color: red;\n}\np {\n  color: var(--color);\n}\na {\n  color: var(--color, orange);\n}\n<p>Paragraph</p>\n<ul>\n  <li>\n    <a href=\"#\">list item a link </a>\n  </li>\n  <li>list item</li>\n</ul>\n",
+    "options": ["red", "orange", "blue", "black"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which statement is not true?",
+    "code": "",
+    "options": [
+      "Specificity determines which CSS rule is applied by the browsers.",
+      "When two selectors apply to the same element, the one with lower specificity wins.",
+      "The last rule defined overrides all previous rules and even conflicting rules.",
+      "Rules with more specific selectors have greater specificity."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "What is the output of the margin value when used within this context, assuming that its containing element is larger than 800px?",
+    "code": ".example {\n  width: 800px;\n  margin: 0 auto;\n}\n",
+    "options": [
+      "The example element will have 0 margin space around the whole element. The auto value will center align the element horizontally and vertically within its container.",
+      "The example element will have 0 margin space on the left and right. It will be sized automatically on the top and bottom, which will center align the element within its container.",
+      "The example element will have 0 margin space on the top and bottom. The margin will be sized automatically on the left and right, which may center align the element within its container.",
+      "The margin value is invalid because its missing a unit measurement after the 0."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "There are currently four viewport-percentage lengths that can be used to define the value relative to the viewport size: vw, vh, vmin, and vmax. If the current viewport size has a width of 800px and a height of 600px, what will these values be equivalent to in pixels?",
+    "code": "10vw = ?px\n10vh = ?px\n10vmin = ?px\n10vmax = ?px\n",
+    "options": ["10vw = 80px", "10vw = 60px", "10vw = 8px", "10vw = 6px"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Referring to the HTML markup and CSS example below, which element(s) will be targeted?",
+    "code": "p:first-of-type:first-letter {\n  color: red;\n}\n<body>\n  <p>Paragraph 1.</p>\n  <p>Paragraph 2.</p>\n\n  <article>\n    <h1>Heading</h1>\n    <p>Paragraph 3.</p>\n    <p>paragraph 4.</p>\n  </article>\n\n  <section>\n    <p>Paragraph 5.</p>\n    <p>Paragraph 6.</p>\n  </section>\n</body>\n",
+    "options": [
+      "The first letter in all paragraphs will be red.",
+      "Only the first letter in paragraphs 1 and 5 will be red.",
+      "The first letter in paragraphs 1, 3, and 5 will be red.",
+      "Only the first letter in paragraph 1 will be red.Only"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Which five style features are associated with the box model?",
+    "code": "",
+    "options": [
+      "margin, padding, border, width, height",
+      "width, height, z-index, overflow, font size",
+      "margin, padding, font size, line height, border",
+      "font size, line height, letter spacing, width, height"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which choice will not set all links that include domain.com to pink?",
+    "code": "a[href$='domain.com'] {\n  color: pink;\n}\na[href='*domain.com'] {\n  color: pink;\n}\na[href*='domain.com'] {\n  color: rgb(255, 155, 155);\n}\na[href*='domain.com'] {\n  color: pink;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which property and value pair could be used to apply a linear gradient effect?",
+    "code": "",
+    "options": [
+      "`css background: linear-gradient(#648880, #293f50);`",
+      "`css background-image: linear(#648880, #293f50);`",
+      "`css background: gradient(linear, #648880, #293f50);`",
+      "`css background-color: linear-gradient(#648880, #293f50);`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "You want to add a background circle behind an icon. Which style declaration is correct?",
+    "code": ".glyphicon-bgcircle {\n  circle-radius: 50%;\n  margins: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\nglyphicon-bgcircle {\n  border-circle: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n.glyphicon-bgcircle {\n  border-radius: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n.glyphicon-bgcircle {\n  radius-rounded: 50%;\n  margins: auto;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Which items are valid values for the font-size property?",
+    "code": "A. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n",
+    "options": ["C, D", "B, C, D", "A, C", "A, B, C, D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "In this image, the blue box and sample text are both contained within the same parent element. The blue box is floated on the left margin of the container. Why is it not contained with the container?",
+    "code": "",
+    "options": [
+      "Floating the blue box increased its height.",
+      "Floating the blue box on the left also moves it down.",
+      "Floating the blue box actually shifts it to the right and down.",
+      "Floating the blue box took it out of document flow and the container is sized only to the sample text."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Given this code, which CSS declaration of .overlay will span the entire width and height of its container?",
+    "code": "<style>\n.container {\n  position: relative;\n  height: 200px;\n  width: 200px;\n  border: 1px solid black;\n}\n</style>\n<div class=\"container\"><div class=\"overlay\"></div></div>\n.overlay {\n  position: static;\n  top: 200px;\n  bottom: 200px;\n  right: 200px;\n  left: 200px;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.overlay {\n  position: absolute;\n  top: 200px;\n  bottom: 200px;\n  right: 200px;\n  left: 200px;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.overlay {\n  position: static;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.overlay {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which missing line of code would place the text on top of the image?",
+    "code": "<div class=\"container\">\n  <img src=\"grumpy-cat.gif\" />\n  <p>The z-index property is cool!</p>\n</div>\nimg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  // Missing line\n}\n",
+    "options": [
+      "`z-index: 1;`",
+      "`z-index: -1;`",
+      "`z-index: 0;`",
+      "`z-index: true;`"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "To make the font size of an element one size smaller than the font size of the element's container, which style property would you apply?",
+    "code": "",
+    "options": [
+      "`font-size: reduce;`",
+      "`font-size: 8px;`",
+      "`font-size: -1em;`",
+      "`font-size: smaller;`"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Given this markup, which selector would result in the text being highlighted in yellow?",
+    "code": "<span class=\"highlight\">#BLM</span>\n.highlight {\n  background-color: yellow;\n}\n#highlight {\n  background-color: yellow;\n}\n.highlight {\n  color: yellow;\n}\n#highlight {\n  color: yellow;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "To prevent a background image from tiling in any direction, which style property would you apply?",
+    "code": "background-repeat: no-repeat;\nbackground-repeat: fixed;\nbackground-repeat: none;\nbackground-tile: none;\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "To rotate an object 30 degrees counterclockwise, which style property would you apply?",
+    "code": "",
+    "options": [
+      "`transform: rotate(-30deg);`",
+      "`transform: rotate(30deg);`",
+      "`rotate: 30deg;`",
+      "`spin: 30deg;`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which style rule would you apply to set the background image to display the contents of the wood.png file?",
+    "code": "",
+    "options": [
+      "`background-image: file('wood.png');`",
+      "`background-image: url('wood.png');`",
+      "`background-image: wood.png;`",
+      "`image: wood.png`"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "What style rule would set the font color of only paragraph two to blue?",
+    "code": "<section><p>paragraph one</p></section><p>paragraph two</p>\nsection > p {\n  color: blue;\n}\np {\n  color: blue;\n}\nsection + p {\n  color: blue;\n}\np + section {\n  color: blue;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "You want to move an element up 100px. Which CSS property would you use?",
+    "code": "",
+    "options": [
+      "`transform: translateX(-100px)`",
+      "`transform: translateY(-100px)`",
+      "`transform: translateY(100px)`",
+      "`transform: translateX(100px)`"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which style will horizontally center the inner &lt;div&gt; within the outer &lt;div&gt;?",
+    "code": "<div id=\"outer\">\n  <div id=\"inner\">Center Me!</div>\n</div>\n#inner {\n  width: 50%;\n}\n\n#outer {\n  width: 100%;\n}\n#inner {\n  left: 0;\n  right: 0;\n  position: center;\n}\n#inner {\n  text-align: center;\n}\n#inner {\n  width: 50%;\n  margin: 0 auto;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which corner will the puppy be in when these CSS rules are applied?",
+    "code": ".pen {\n  height: 100px;\n  width: 100px;\n  border: 2px dashed brown;\n  position: relative;\n}\n\n#puppy {\n  position: absolute;\n  right: 80px;\n  bottom: 0px;\n}\n<div class=\"pen\">\n  <span id=\"puppy\">:dog:</span>\n</div>\n",
+    "options": [
+      "top-right corner",
+      "bottom-right corner",
+      "top-left corner",
+      "bottom-left corner"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which choice uses the correct syntax for adding a hover pseudo class to \\<a> element?",
+    "code": "",
+    "options": [
+      "`a:hover {...}`",
+      "`a :hover {...}`",
+      "`a.hover {...}`",
+      "`a hover {...}`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which missing code will give \"Cellar Door\" a shadow?",
+    "code": "  <style>\n    #cellar-door {\n      box-shadow: 3px 5px 10px #000;\n    }\n    .text-shadow {\n      text-shadow: 3px 5px 10px #000;\n    }\n  </style>\n\n  <h1 _____> Cellar Door</h1>\n",
+    "options": [
+      "`class=\"text-shadow\"`",
+      "`id=\"cellar-door\"`",
+      "`id=\"text-shadow\"`",
+      "`class=\"cellar-door\"`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which choice is a valid example of a comment in CSS?",
+    "code": "",
+    "options": [
+      "`-- This line has been cancelled.`",
+      "`/* This line has been cancelled. */`",
+      "`// This line has been cancelled.`",
+      "`# This line has been cancelled.`"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which element(s) will be displayed in blue text?",
+    "code": "    h2 ~ p {\n      color: blue;\n    }\n  <section>\n    <p>P1</p>\n    <h2>H2</h2>\n    <p>P3</p>\n    <p>P4</p>\n  </section>\n",
+    "options": ["P3", "P1, P3 and P4", "P3 and P4", "P1"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "When these pseudo class selectors are applied to a link, what states will the styles be applied to?",
+    "code": "a:visited {\n  ...;\n}\na:active {\n  ...;\n}\na:hover {\n  ...;\n}\na:focus {\n  ...;\n}\n",
+    "options": [
+      "`:visited` styles are applied after the link has been opened.",
+      "`:visited` styles are applied after the link has been opened.",
+      "`:visited` styles are applied after the link has been opened.",
+      "`:visited` styles are applied on mouse hold."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "What style rule should you use to display all input elements that have failed the validation test with a red font?",
+    "code": "input.valid[false] {\n  color: red;\n}\ninput:invalid {\n  color: red;\n}\ninput.not(valid) {\n  color: red;\n}\ninput.invalid {\n  color: red;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "What style rule should you apply to the img element to display the element in grayscale with no color?",
+    "code": "img {\n  transform: grayscale(1);\n}\nimg {\n  filter: grayscale(0);\n}\nimg {\n  transform: grayscale(0);\n}\nimg {\n  filter: grayscale(1);\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Why might you create a reset style sheet?",
+    "code": "",
+    "options": [
+      "to reduce page size by removing browser styles from the page rendering.",
+      "to start designing a page style by overriding any built-in browser styles",
+      "to make it easier to minify the content of your web page design",
+      "to increase execution time by not relying on built-in browser styles"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which option is an invalid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?",
+    "code": "",
+    "options": [
+      "padding: 10px 0px;",
+      "padding: 10px 10px 0px 0px;",
+      "padding: 10px 0;",
+      "padding: 10px 0px 10px 0px;"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "How would you absolutely position an element of the logo class inside of a relatively positioned container?",
+    "code": ".logo {\n  position: absolute;\n  padding-left: 100px;\n  padding-top: 150px;\n}\n.logo {\n  position: absolute;\n  left: 100px;\n  top: 150px;\n}\n.logo {\n  position: absolute;\n  left-padding: 100px;\n  top-padding: 150px;\n}\n.logo {\n  position: absolute;\n  margin-left: 100px;\n  margin-top: 150px;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "How would the `<div>` with the class .child be positioned within its container?",
+    "code": "<style>\n  .container {\n    height: 200px;\n    width: 200px;\n  }\n  .child {\n    margin: auto 0;\n    height: 100px;\n  }\n</style>\n<div class=\"container\">\n  <div class=\"child\">...</div>\n</div>\n",
+    "options": [
+      "horizontally centered",
+      "vertically centered, spanning the container's width",
+      "at the bottom of the container, spanning the container's width",
+      "at the top of the container, spanning the container's width"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "By default, a CSS transition is \\_\\_",
+    "code": "",
+    "options": [
+      "asymmetric, so that the transition going from the initial state to the end state is different from the transition going from the end state back to the initial state.",
+      "one sided, so that there is only one transition and it goes from the initial state to the end state.",
+      "symmetric, so that the transition going from the initial state to the end state is the reverse of the transition going from the end state back to the initial state.",
+      "one-sided, so that there is only one transition and it goes from the end state to the initial state."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Which style rule will extend the header element across an entire grid row from the first column through the last column?",
+    "code": "header {\n  grid-column: 1 / auto;\n}\nheader {\n  grid-column: 1/-1;\n}\nheader {\n  grid-column: -1/1;\n}\nheader {\n  grid-column: 1/100%;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "To center the content of a grid cell horizontally and vertically within the cell, which style rule should you apply?",
+    "code": "align-items: start;\njustify-items: end;\nalign--items: center;\njustify-items: center;\nalign-items: middle;\njustify-items: middle;\nalign-items: stretch;\njustify-items: stretch;\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "What style rule should you use to display all input elements that have failed the validation test with a red font?",
+    "code": "input.valid[false] {\n  color: red;\n}\ninput:invalid {\n  color: red;\n}\ninput.not(valid) {\n  color: red;\n}\ninput.invalid {\n  color: red;\n}\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "To insert an external style sheet file into another style sheet file, which rule should you use?",
+    "code": "",
+    "options": ["`@import`", "`@link`", "`@insert`", "`@style`"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Given this code, how tall will the following element be in pixels?",
+    "code": "<style>\n  #tall-text {\n    display: inline;\n    font-size: 20px;\n    height: 200px;\n  }\n</style>\n\n<p id=\"tall-text\">Did I grow?</p>\n",
+    "options": ["200px", "20px", "180px", "220px"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which style rule will place an X within the grid to win the game?",
+    "code": "",
+    "options": ["row: 3;", "grid-row: 3;", "row: 2;", "grid-row: 2;"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which CSS property is used to create an image reflection ?",
+    "code": "",
+    "options": [
+      "box-relect",
+      "img-reflect",
+      "None of the above",
+      "reflect-img"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What is the general syntax of writing the var() function ?",
+    "code": "",
+    "options": [
+      "var(--name, value)",
+      "var(--name)",
+      "var(value)",
+      "None of the Above"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "How many layout modes were there before the Flexbox Layout Module was introduced in CSS ?",
+    "code": "",
+    "options": ["2", "1", "4", "3"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Which of the following components of the CSS box model are transparent ?",
+    "code": "",
+    "options": ["Padding", "Margin", "Both A and B", "None"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "How are custom fonts defined using CSS ?",
+    "code": "",
+    "options": [
+      "@Font-Face Rule",
+      "Custom font cannot be defined",
+      "src tags",
+      "None of the above"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Which of the following CSS property sets what kind of line decorations are added to an element, such as underlines, overlines, etc?",
+    "code": "",
+    "options": [
+      "text-decoration",
+      "text-style",
+      "text-decoration-line",
+      "text-line"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Which of the following CSS Property sets the stacking order of positioned elements?",
+    "code": "",
+    "options": ["y-index", "z-index", "x-index", "all of the mentioned"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which of the following property allows a marquee to be used in the case of a text-overflow?",
+    "code": "",
+    "options": [
+      "overflow-marquee",
+      "overflow-style",
+      "overflow-text",
+      "none of the mentioned"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which of the following Cascading order has the highest precedence?",
+    "code": "",
+    "options": [
+      "user agent declarations",
+      "user normal declarations",
+      "author normal declarations",
+      "author important declarations"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "The CSS cascade assigns a weight to each style rule ?",
+    "code": "",
+    "options": ["True", "False"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "The \\***\\*\\_\\_\\_\\_\\*\\*** represents the result of the cascade: it is the declared value that wins the cascade.",
+    "code": "",
+    "options": [
+      "specified Value",
+      "actual value",
+      "computed value",
+      "cascaded value"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Using negative text-indent is also known as **\\_** ?",
+    "code": "",
+    "options": [
+      "The Scott Kellum method",
+      "The Phark method",
+      "Radu Darvas Technique",
+      "The Langridge method"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Using margin is also known as **\\_** ?",
+    "code": "",
+    "options": [
+      "Fahrner image replacement",
+      "The Lindsay method",
+      "Radu Darvas Technique",
+      "The Langridge method"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "If a particular rule should never be overridden by another rule, the \\***\\*\\_\\_\\_\\_\\*\\*** indication should be used.",
+    "code": "",
+    "options": ["@important", "!important!", "!important", "important!"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What does CSS stand for?",
+    "code": "",
+    "options": [
+      "Creative Style Sheets",
+      "Colourful Style Sheets",
+      "Cascading Style Sheets",
+      "Colourful Style Sheets"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What color would rgb(255,0,0) give?",
+    "code": "",
+    "options": ["Blue", "Green", "Red", "Yellow"],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What is the correct HTML for referring to an external style sheet?",
+    "code": "",
+    "options": [
+      "`<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">`",
+      "`<stylesheet>mystyle.css</stylesheet>`",
+      "`<style src= \"mystyle.css\">`",
+      "None of these."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "The \\<link> tag goes inside:",
+    "code": "",
+    "options": [
+      "the title section",
+      "the body section",
+      "the head section",
+      "None of the above"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What CSS define in HTML?",
+    "code": "",
+    "options": [
+      "How to send HTML elements",
+      "How to display HTML elements",
+      "How to save HTML elements",
+      "How to make HTML elements"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which of the following statements is TRUE for CSS?",
+    "code": "",
+    "options": [
+      "An inline style sheet should be used when a single document has a unique style",
+      "An external style sheet is ideal when the style is applied to many pages",
+      "Both and b above",
+      "An external style sheet can be written in HTML"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "In CSS, margin collapsing only happens with?",
+    "code": "",
+    "options": [
+      "The horizontal margins of inline elements in the normal flow.",
+      "The vertical margins of block elements in the normal flow.",
+      "The horizontal margins of block elements in the normal flow.",
+      "The vertical margins of inline elements in the normal flow."
+    ],
+    "correctOptionIndex": 2
+  }
+]

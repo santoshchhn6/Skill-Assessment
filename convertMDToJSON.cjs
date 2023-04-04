@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const convertMDToJSON = () => {
-  const file = path.join(__dirname, "./src/data/MD_Files/React.md");
+  const file = path.join(__dirname, "./src/assets/css-quiz.md");
 
   fs.readFile(file, "utf8", (err, data) => {
     if (err) throw err;
@@ -91,7 +91,7 @@ const convertMDToJSON = () => {
 
     // write file in data folder
     fs.writeFile(
-      "./src/data/data/" + heading + ".json",
+      "./src/data/" + heading + ".json",
       JSON.stringify(questions),
       (err) => {
         if (err) throw err;

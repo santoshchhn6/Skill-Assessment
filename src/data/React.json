@@ -232,14 +232,14 @@
     "code": "",
     "options": [
       "a property that adds child components to state",
-      "a property that lets you pass components as data to other components",
+      "a special property that JSX creates on components that contain both an opening tag and a closing tag, referencing it's contents.",
       "a property that lets you set an array as a property",
       "a property that lets you pass data to child elements"
     ],
     "correctOptionIndex": 1
   },
   {
-    "question": "Which attribute do you use to replace innerHTML in the browser DOM?",
+    "question": "Which attribute is React's replacement for using innerHTML in the browser DOM?",
     "code": "",
     "options": [
       "injectHTML",
@@ -334,19 +334,8 @@
     "correctOptionIndex": 1
   },
   {
-    "question": "Why might you use a ref?",
-    "code": "",
-    "options": [
-      "to directly access the DOM node",
-      "to refer to another JS file",
-      "to call a function",
-      "to bind the function"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "question": "What is `[e.target.id]` called in the following code snippet?",
-    "code": "handleChange(e) {\n  this.setState({ [e.target.id]: e.target.value })\n}\n",
+    "question": "What is `[e.target.id]` called in this code snippet?",
+    "code": "const handleChange = (e) => {\n  setState((prevState) => ({ ...prevState, [e.target.id]: e.target.value }));\n};\n",
     "options": [
       "a computed property name",
       "a set value",
@@ -407,7 +396,7 @@
   },
   {
     "question": "What do you need to change about this code to get it to run?",
-    "code": "class clock extends React.Component {\n  render() {\n    return <h1>Look at the time: {this.props.time}</h1>;\n  }\n}\n",
+    "code": "const clock = (props) => {\n  return <h1>Look at the time: {props.time}</h1>;\n};\n",
     "options": [
       "Add quotes around the return value",
       "Remove `this`",
@@ -428,14 +417,9 @@
     "correctOptionIndex": 0
   },
   {
-    "question": "What can you use to wrap Component imports in order to load them lazily?",
+    "question": "Which function from React can you use to wrap Component imports to load them lazily?",
     "code": "",
-    "options": [
-      "`React.fallback`",
-      "`React.split`",
-      "`React.lazy`",
-      "`React.memo`"
-    ],
+    "options": ["`fallback`", "`split`", "`lazy`", "`memo`"],
     "correctOptionIndex": 2
   },
   {
@@ -448,17 +432,6 @@
       "`useEffect(() => { setDone(true); }, [done, setDone]);`"
     ],
     "correctOptionIndex": 1
-  },
-  {
-    "question": "Which of the following click event handlers will allow you to pass the name of the person to be hugged?",
-    "code": "class Huggable extends React.Component {\n  hug(id) {\n    console.log(\"hugging \" + id);\n  }\n\n  render() {\n    let name = \"kitteh\";\n    let button = // Missing Code\n    return button;\n  }\n}\n",
-    "options": [
-      "`<button onClick={(name) => this.hug(name)}>Hug Button</button>`",
-      "`<button onClick={this.hug(e, name)}>Hug Button</button>`",
-      "`<button onClick={(e) => hug(e, name)}>Hug Button</button>`",
-      "`<button onClick={(e) => this.hug(name,e)}>Hug Button</button>`"
-    ],
-    "correctOptionIndex": 3
   },
   {
     "question": "Currently, `handleClick` is being called instead of passed as a reference. How do you fix this?",
@@ -502,7 +475,7 @@
       "It will update the value of name once and not run again until name is changed from the outside.",
       "It will cause an infinite loop."
     ],
-    "correctOptionIndex": 2
+    "correctOptionIndex": 3
   },
   {
     "question": "Which choice will not cause a React component to rerender?",
@@ -539,7 +512,7 @@
     "correctOptionIndex": 0
   },
   {
-    "question": "Per the following code, when is the Hello component displayed?",
+    "question": "Per the following code, when is the Hello component assigned to greeting?",
     "code": "const greeting = isLoggedIn ? <Hello /> : null;\n",
     "options": [
       "never",
@@ -584,18 +557,7 @@
     "correctOptionIndex": 2
   },
   {
-    "question": "hich library does the fetch() function come from?",
-    "code": "",
-    "options": [
-      "`FetchJS`",
-      "`ReactDOM`",
-      "`No library. fetch() is supported by most browsers.`",
-      "`React`"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
-    "question": "hat is the difference between the click behaviors of these two buttons(assuming that this.handleClick is bound correctly)",
+    "question": "What is the difference between the click behaviors of these two buttons(assuming that this.handleClick is not bound correctly)",
     "code": "  A. <button onClick=this.handleClick>Click Me</button>\n  B. <button onClick={event => this.handleClick(event)}>Click Me</button>\n",
     "options": [
       "`Button A will not have access to the event object on click of the button`",
@@ -606,25 +568,14 @@
     "correctOptionIndex": 1
   },
   {
-    "question": "hat will happen when this useEffect Hook is executed, assuming name is not already equal to John?",
-    "code": "useEffect(() => {\n  setName('John');\n}, [name]);\n",
-    "options": [
-      "`It will cause an error immediately.`",
-      "`It will execute the code inside the function, but only after waiting to ensure that no other component is accessing the name variable.`",
-      "`It will update the value of name once and not run again until name is changed from the outside.`",
-      "`It will cause an infinite loop.`"
-    ],
-    "correctOptionIndex": 2
-  },
-  {
     "question": "How would you add to this code, from React Router, to display a component called About?",
-    "code": "<Route path=\"/:id\" />\n<Route path=\"/:id\">\n  {' '}\n  <About />\n</Route>\n<Route path=\"/tid\" about={Component} />\n<Route path=\"/:id\" route={About} />\n<Route>\n  <About path=\"/:id\" />\n</Route>\n",
+    "code": "<Route path=\"/:id\">\n  {' '}\n  <About />\n</Route>\n<Route path=\"/tid\" about={Component} />\n<Route path=\"/:id\" route={About} />\n<Route>\n  <About path=\"/:id\" />\n</Route>\n",
     "options": ["A", "B", "C", "D"],
     "correctOptionIndex": 0
   },
   {
     "question": "Which class-based component is equivalent to this function component?",
-    "code": "const Greeting ({ name }) > <h1>Hello {name}!</h1>;\nclass Greeting extends React.Component {\n  constructor() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\nclass Greeting extends React.Component {\n  <h1>Hello {this.props.name}!</h1>;\n}\nclass Greeting extends React.Component {\n  render() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\nclass Greeting extends React.Component {\n  render({ name }) {\n    return <h1>Hello {name}!</h1>;\n  }\n}\n",
+    "code": "const Greeting = ({ name }) => <h1>Hello {name}!</h1>;\nclass Greeting extends React.Component {\n  constructor() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\nclass Greeting extends React.Component {\n  <h1>Hello {this.props.name}!</h1>;\n}\nclass Greeting extends React.Component {\n  render() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\nclass Greeting extends React.Component {\n  render({ name }) {\n    return <h1>Hello {name}!</h1>;\n  }\n}\n",
     "options": ["A", "B", "C", "D"],
     "correctOptionIndex": 2
   },
@@ -673,32 +624,10 @@
     "correctOptionIndex": 1
   },
   {
-    "question": "Given the code below, what does the second argument that is sent to the render function describe?",
-    "code": "ReactDOM.render(<h1>Hi</h1>, document.getElementById('root'));\n",
-    "options": [
-      "where the React element should be added to the DOM",
-      "where to call the function",
-      "where the root component is",
-      "where to create a new JavaScript file"
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "question": "What is the first argument, x, that is sent to the `createElement` function?",
-    "code": "`React.createElement(x,y,z);`",
-    "options": [
-      "the element that should be created",
-      "the order in which this element should be placed on the page",
-      "the properties of the element",
-      "data that should be displayed in the element."
-    ],
-    "correctOptionIndex": 0
-  },
-  {
-    "question": "What is the name of this component?",
+    "question": "What is the name of the base component of this component?",
     "code": "class Comp extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}\n",
     "options": ["Comp", "h1", "React.Component", "Component"],
-    "correctOptionIndex": 0
+    "correctOptionIndex": 3
   },
   {
     "question": "When using a portal, what is the first argument?",
@@ -724,7 +653,7 @@
   },
   {
     "question": "What is the use of map function below?",
-    "code": "const database = [user1:{},user2:{},user3:{}];\ndatabase.map((user)=><h1>user.data</h1>);\n",
+    "code": "const database = [{ data: 1 }, { data: 2 }, { data: 3 }];\ndatabase.map((user) => <h1>{user.data}</h1>);\n",
     "options": [
       "gives a map of all the entries in database",
       "returns a heading tag for every entry in the database containing it's data",
@@ -735,12 +664,12 @@
   },
   {
     "question": "Describe what is happening in this code?",
-    "code": "const { name: firstName } = person;\n",
+    "code": "const { name: firstName } = props;\n",
     "options": [
-      "It is creating a new object that contains the same name property as the person object.",
-      "It is assigning the value of the person object's firstName property to a constant called name.",
-      "It is retrieving the value of person.name.firstName.",
-      "It is assigning the value of the person object's name property to a constant called firstName."
+      "It is creating a new object that contains the same name property as the props object.",
+      "It is assigning the value of the props object's firstName property to a constant called name.",
+      "It is retrieving the value of props.name.firstName.",
+      "It is assigning the value of the props object's name property to a constant called firstName."
     ],
     "correctOptionIndex": 3
   },
@@ -767,8 +696,8 @@
     "correctOptionIndex": 3
   },
   {
-    "question": "Given this code, what will be printed in the `<h1>` tag?",
-    "code": "const MyComponent = ({ children }) => (\n  <h1>{children.length}</h1>\n);\n...\n<MyComponent>\n<p>Hello</p>\n<p>Goodbye</p>\n</MyComponent>\n",
+    "question": "Given this code, what will be printed in the `<div>` tag?",
+    "code": "const MyComponent = ({ children }) => (\n  <div>{children.length}</div>\n);\n...\n<MyComponent>\n<p>\n  Hello <span>World!</span>\n</p>\n<p>Goodbye</p>\n</MyComponent>\n",
     "options": [
       "It will produce an error saying \"cannot read property \"length\" of undefined.\"",
       "1",
@@ -800,10 +729,10 @@
     "correctOptionIndex": 3
   },
   {
-    "question": "The code below is rendering nothing, and there is an error that says \"ReactDOM is not defined.\" How do you fix this issue?",
-    "code": "import React from 'react';\nimport { render } from 'react-dom';\n\nconst element = <h1>Hi</h1>;\n\nReactDOM.render(element, document.getElementById('root'));\n",
+    "question": "The code below is rendering nothing and generates this error: \"ReactDOM is not defined.\" How do you fix this issue?",
+    "code": "import React from 'react';\nimport { createRoot } from 'reactjs-dom';\n\nconst element = <h1>Hi</h1>;\n// Note: error on the line below\nconst root = ReactDOM.createRoot(document.getElementById('root'));\n\nroot.render(element);\n",
     "options": [
-      "`render(element, document.getElementById(\"root\"));`",
+      "`createRoot(document.getElementById(\"root\"));`",
       "`ReactDOM(element, document.getElementById(\"root\"));`",
       "`renderDOM(element, document.getElementById(\"root\"));`",
       "`DOM(element, document.getElementById(\"root\"));`"
@@ -825,9 +754,9 @@
     "question": "You are rendering a list with React when this warning appears in the console: \"Warning: Each child in a list should have a unique 'key' prop.\" How do you fix this issue?",
     "code": "",
     "options": [
-      "Pass the name of each item as its key.",
-      "Add a key prop with the same value to each item the list.",
-      "Clear the console warnings.",
+      "Add a key prop with the same value to each item in the list",
+      "Clear the console warnings",
+      "Use the UseId hook to generate a unique key for each element in the list",
       "When iterating over the list items, add a unique property to each list item."
     ],
     "correctOptionIndex": 3
@@ -913,7 +842,7 @@
   },
   {
     "question": "How do you add an id of heading to the following h1 element?",
-    "code": "`let dish = <h1>Mac and Cheese</h1>; `",
+    "code": "let dish = <h1>Mac and Cheese</h1>;\n",
     "options": [
       "`let dish = <h1 id={heading}>Mac and Cheese</h1>;`",
       "`let dish = <h1 id=\"heading\">Mac and Cheese</h1>;`",
@@ -973,7 +902,7 @@
     "correctOptionIndex": 0
   },
   {
-    "question": "What might you use webpack for?",
+    "question": "What might you use webpack for in React development?",
     "code": "",
     "options": [
       "to fetch remote dependencies used by your app",
@@ -995,7 +924,7 @@
     "correctOptionIndex": 0
   },
   {
-    "question": "How would you modify the constructor to fix this erroe: \"ReferenceError: Must call super constructor in derived class before accessing 'this'...\"?",
+    "question": "How would you modify the constructor to fix this error: \"ReferenceError: Must call super constructor in derived class before accessing 'this'...\"?",
     "code": "class TransIsBeautiful extends React.Component {\n  constructor(props){\n  // Missing line\n  console.log(this) ;\n  }\n  ...\n}\n",
     "options": [
       "render(props);",
@@ -1038,5 +967,190 @@
       "to directly access the DOM node"
     ],
     "correctOptionIndex": 3
+  },
+  {
+    "question": "What pattern is being used in this code block?",
+    "code": "const { tree, lake } = nature;\n",
+    "options": [
+      "function defaults",
+      "array destructuring",
+      "PRPL pattern",
+      "destructuring assignment"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "How would you correct this code block to make sure that the sent property is set to the Boolean value false?",
+    "code": "ReactDom.render(\n  <Message sent=false />,\n  document.getElementById(\"root\")\n);\n<Message sent={false} />,\nReactDom.render(<Message sent=\"false\" />, document.getElementById('root'));\n<Message sent=\"false\" />,\nReactDom.render(<Message sent=\"false\" />, document.getElementById('root'));\n",
+    "options": ["A", "B", "C", "D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "This code is part of an app that collects Pokemon. The useState hook below is a piece of state holding onto the names of the Pokemon collected so far. How would you access the collected Pokemon in state?",
+    "code": "const PokeDex = (props) => {\n  const [pokeDex, setPokeDex] = useState([]);\n  /// ...\n};\n",
+    "options": [
+      "props.pokeDex",
+      "this.props.pokeDex",
+      "setPokeDex()",
+      "pokeDex"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What would you pass to the onClick prop that wil allow you to pass the initName prop into the greet handler?",
+    "code": "const Greeting = ({ initName }) => {\n  const greet = (name) => console.log(\"Hello, \" + name + \"!\");\n  return <button onClick={ ... }>Greeting Button </button>\n}\n",
+    "options": [
+      "hug",
+      "this.hug(initName)",
+      "(name) => this.hug(name)",
+      "() => hug(initName)"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What is the name of the compiler used to transform JSX into JavaScript?",
+    "code": "",
+    "options": ["Babel", "JSX Editor", "Browser Buddy", "ReactDOM"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which hook is used to prevent a function from being recreated on every component render?",
+    "code": "",
+    "options": ["useCallback", "useMemo", "useRef", "useTransition"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Why might you use the `useRef` hook?",
+    "code": "",
+    "options": [
+      "To bind the function",
+      "To call a function",
+      "To directly access a DOM",
+      "To refer to another JS file"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Which of the following is required to use React?",
+    "code": "",
+    "options": ["JavaScript", "React Router", "Redux", "Prop-Types"],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "What is the correct way to get a value from context?",
+    "code": "",
+    "options": [
+      "const value = useContext(MyContext.Consumer)",
+      "const value = useContext(MyContext.Provider)",
+      "const value = useContext(MyContext)",
+      "const value = useContext({value: \"intiial value\"})"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Why is ref used?",
+    "code": "",
+    "options": [
+      "to bind function",
+      "to call function",
+      "to directly access DOM node",
+      "to refer to another JS file"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "Choose the method which should be overridden to stop the component from updating?",
+    "code": "",
+    "options": [
+      "componentDidMount",
+      "componentDidUpdate",
+      "willComponentUpdate",
+      "shouldComponentUpdate"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "What is the functionality of a “webpack” command?",
+    "code": "",
+    "options": [
+      "Runs react local development server",
+      "Transfers all JS files to down into one file",
+      "A module builder",
+      "All of the above"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Choose the method which is not a part of ReactDOM?",
+    "code": "",
+    "options": [
+      "ReactDOM.createPortal()",
+      "ReactDOM.hydrate()",
+      "ReactDOM.destroy()",
+      "ReactDOM.findDOMnode()"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "In react, the key should be?",
+    "code": "",
+    "options": [
+      "Unique among his siblings",
+      "Unique in DOM",
+      "Does not requires to be unique",
+      "all of the above"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "question": "Which company developed ReactJS?",
+    "code": "",
+    "options": ["Google", "Meta (ex Facebook)", "Apple", "Twitter"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Choose the library which is most often associated with react?",
+    "code": "",
+    "options": ["Chai", "Sinon", "Jest", "Mocha"],
+    "correctOptionIndex": 2
+  },
+  {
+    "question": "What of the following is used in React.js to increase performance?",
+    "code": "",
+    "options": [
+      "Original DOM",
+      "Virtual DOM",
+      "Both of the above",
+      "None of the above"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Among The following options, choose the one which helps react for keeping their data uni-directional?",
+    "code": "",
+    "options": ["DOM", "flux", "JSX", "Props"],
+    "correctOptionIndex": 1
+  },
+  {
+    "question": "Which choice is a correct refactor of the Greeting class component into a function component?",
+    "code": "class Greeting extends React.Component {\n  render() {\n    return <h1>Hello {this.props.name}!<h1>;\n  }\n}\n",
+    "options": [
+      "`const Greeting = (name) => <h1>{name}</h1>`",
+      "`function Greeting(name){return <h1>{name}</h1>;}`",
+      "`const Greeting = props => { <h1>{props.name}</h1> }`",
+      "`const Greeting = ({ name }) => <h1>Hello {name}</h1>;`"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "question": "Why is the `waitlist` not updating correctly?",
+    "code": "const Waitlist = () => {\n  const [name, setName] = useState('');\n  const [waitlist, setWaitlist] = useState([]);\n  const onSubmit = (e) => {\n    e.preventDefault();\n    waitlist.push(name);\n  };\n  return (\n    <div>\n      <form onSubmit={onSubmit}>\n        <label>\n          Name: <input type=\"text\" value={name} onChange={(e) => setName(e.target.value)} />\n        </label>\n        <button type=\"submit\">Add to waitlist</button>\n      </form>\n\n      <ol>\n        {waitlist.map((name) => (\n          <li key={name}>{name}</li>\n        ))}\n      </ol>\n    </div>\n  );\n};\n",
+    "options": [
+      "`waitlist` is being mutated directly. Use the `setWaitlist` function instead to update the waitlist state.",
+      "The form is reloading the page each time `Add to waitlist` is clicked.",
+      "The `Add to waitlist` button is missing a click handler.",
+      "There are likely repeated names inside of the `waitlist` array."
+    ],
+    "correctOptionIndex": 0
   }
 ]
