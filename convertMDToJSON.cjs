@@ -71,7 +71,7 @@ const convertMDToJSON = () => {
       }
 
       if (readingCode) {
-        if (!firstLine) code += "\n" + str[i];
+        if (!firstLine) code += str[i] + "\n";
         firstLine = false;
       }
 

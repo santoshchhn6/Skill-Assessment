@@ -23,7 +23,7 @@
   },
   {
     "question": "How do you fix the syntax error that results from running this code?",
-    "code": "\nconst person =(firstName, lastName) =>\n{\n  first: firstName,\n  last: lastName\n}\nconsole.log(person(\"Jill\", \"Wilson\"))",
+    "code": "const person =(firstName, lastName) =>\n{\n  first: firstName,\n  last: lastName\n}\nconsole.log(person(\"Jill\", \"Wilson\"))\n",
     "options": [
       "Wrap the object in parentheses.",
       "Call the function from another file.",
@@ -45,7 +45,7 @@
   },
   {
     "question": "Using object literal enhancement, you can put values back into an object. When you log person to the console, what is the output?",
-    "code": "\nconst name = 'Rachel';\nconst age = 31;\nconst person = { name, age };\nconsole.log(person);",
+    "code": "const name = 'Rachel';\nconst age = 31;\nconst person = { name, age };\nconsole.log(person);\n",
     "options": [
       "`{{name: \"Rachel\", age: 31}}`",
       "`{name: \"Rachel\", age: 31}`",
@@ -62,7 +62,7 @@
   },
   {
     "question": "To get the first item from the array (\"cooking\") using array destructuring, how do you adjust this line?",
-    "code": "\nconst topics = ['cooking', 'art', 'history'];",
+    "code": "const topics = ['cooking', 'art', 'history'];\n",
     "options": [
       "`const first = [\"cooking\", \"art\", \"history\"]`",
       "`const [] = [\"cooking\", \"art\", \"history\"]`",
@@ -84,7 +84,7 @@
   },
   {
     "question": "What should the console read when the following code is run?",
-    "code": "\nconst [, , animal] = ['Horse', 'Mouse', 'Cat'];\nconsole.log(animal);",
+    "code": "const [, , animal] = ['Horse', 'Mouse', 'Cat'];\nconsole.log(animal);\n",
     "options": ["Horse", "Cat", "Mouse", "undefined"],
     "correctOptionIndex": 1
   },
@@ -107,7 +107,7 @@
   },
   {
     "question": "Which props from the props object is available to the component with the following syntax?",
-    "code": "\n<Message {...props} />",
+    "code": "<Message {...props} />\n",
     "options": [
       "any that have not changed",
       "all of them",
@@ -118,7 +118,7 @@
   },
   {
     "question": "Consider the following code from React Router. What do you call :id in the path prop?",
-    "code": "\n<Route path=\"/:id\" />",
+    "code": "<Route path=\"/:id\" />\n",
     "options": [
       "This is a route modal",
       "This is a route parameter",
@@ -129,13 +129,13 @@
   },
   {
     "question": "If you created a component called Dish and rendered it to the DOM, what type of element would be rendered?",
-    "code": "\nfunction Dish() {\n  return <h1>Mac and Cheese</h1>;\n}\n\nReactDOM.render(<Dish />, document.getElementById('root'));",
+    "code": "function Dish() {\n  return <h1>Mac and Cheese</h1>;\n}\n\nReactDOM.render(<Dish />, document.getElementById('root'));\n",
     "options": ["`div`", "section", "component", "`h1`"],
     "correctOptionIndex": 3
   },
   {
     "question": "What does this React element look like given the following function? (Alternative: Given the following code, what does this React element look like?)",
-    "code": "\nReact.createElement('h1', null, \"What's happening?\");",
+    "code": "React.createElement('h1', null, \"What's happening?\");\n",
     "options": [
       "`<h1 props={null}>What's happening?</h1>`",
       "`<h1>What's happening?</h1>`",
@@ -146,13 +146,13 @@
   },
   {
     "question": "What property do you need to add to the Suspense component in order to display a spinner or loading state?",
-    "code": "\nfunction MyComponent() {\n  return (\n    <Suspense>\n      <div>\n        <Message />\n      </div>\n    </Suspense>\n  );\n}",
+    "code": "function MyComponent() {\n  return (\n    <Suspense>\n      <div>\n        <Message />\n      </div>\n    </Suspense>\n  );\n}\n",
     "options": ["lazy", "loading", "fallback", "spinner"],
     "correctOptionIndex": 2
   },
   {
     "question": "What do you call the message wrapped in curly braces below?",
-    "code": "\nconst message = 'Hi there';\nconst element = <p>{message}</p>;",
+    "code": "const message = 'Hi there';\nconst element = <p>{message}</p>;\n",
     "options": [
       "a JS function",
       "a JS element",
@@ -185,7 +185,7 @@
   },
   {
     "question": "What is the difference between the click behaviors of these two buttons (assuming that this.handleClick is bound correctly)?",
-    "code": "\nA. <button onClick={this.handleClick}>Click Me</button>\nB. <button onClick={event => this.handleClick(event)}>Click Me</button>",
+    "code": "A. <button onClick={this.handleClick}>Click Me</button>\nB. <button onClick={event => this.handleClick(event)}>Click Me</button>\n",
     "options": [
       "Button A will not have access to the event object on click of the button.",
       "Button B will not fire the handler this.handleClick successfully.",
@@ -196,7 +196,7 @@
   },
   {
     "question": "How do you destructure the properties that are sent to the Dish component?",
-    "code": "\nfunction Dish(props) {\n  return (\n    <h1>\n      {props.name} {props.cookingTime}\n    </h1>\n  );\n}",
+    "code": "function Dish(props) {\n  return (\n    <h1>\n      {props.name} {props.cookingTime}\n    </h1>\n  );\n}\n",
     "options": [
       "`function Dish([name, cookingTime]) { return <h1>{name} {cookingTime}</h1>; }`",
       "`function Dish({name, cookingTime}) { return <h1>{name} {cookingTime}</h1>; }`",
@@ -274,7 +274,7 @@
   },
   {
     "question": "You have written the following code but nothing is rendering. How do you fix this problem?",
-    "code": "\nconst Heading = () => {\n  <h1>Hello!</h1>;\n};",
+    "code": "const Heading = () => {\n  <h1>Hello!</h1>;\n};\n",
     "options": [
       "Add a render function.",
       "Change the curly braces to parentheses or add a return statement before the `h1` tag.",
@@ -346,7 +346,7 @@
   },
   {
     "question": "What is `[e.target.id]` called in the following code snippet?",
-    "code": "\nhandleChange(e) {\n  this.setState({ [e.target.id]: e.target.value })\n}",
+    "code": "handleChange(e) {\n  this.setState({ [e.target.id]: e.target.value })\n}\n",
     "options": [
       "a computed property name",
       "a set value",
@@ -357,7 +357,7 @@
   },
   {
     "question": "What is the name of this component?",
-    "code": "\nclass Clock extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}",
+    "code": "class Clock extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}\n",
     "options": [
       "Clock",
       "It does not have a name prop.",
@@ -407,7 +407,7 @@
   },
   {
     "question": "What do you need to change about this code to get it to run?",
-    "code": "\nclass clock extends React.Component {\n  render() {\n    return <h1>Look at the time: {this.props.time}</h1>;\n  }\n}",
+    "code": "class clock extends React.Component {\n  render() {\n    return <h1>Look at the time: {this.props.time}</h1>;\n  }\n}\n",
     "options": [
       "Add quotes around the return value",
       "Remove `this`",
@@ -440,7 +440,7 @@
   },
   {
     "question": "How do you invoke setDone only when component mounts, using hooks?",
-    "code": "\nfunction MyComponent(props) {\n  const [done, setDone] = useState(false);\n\n  return <h1>Done: {done}</h1>;\n}",
+    "code": "function MyComponent(props) {\n  const [done, setDone] = useState(false);\n\n  return <h1>Done: {done}</h1>;\n}\n",
     "options": [
       "`useEffect(() => { setDone(true); });`",
       "`useEffect(() => { setDone(true); }, []);`",
@@ -451,7 +451,7 @@
   },
   {
     "question": "Which of the following click event handlers will allow you to pass the name of the person to be hugged?",
-    "code": "\nclass Huggable extends React.Component {\n  hug(id) {\n    console.log(\"hugging \" + id);\n  }\n\n  render() {\n    let name = \"kitteh\";\n    let button = // Missing Code\n    return button;\n  }\n}",
+    "code": "class Huggable extends React.Component {\n  hug(id) {\n    console.log(\"hugging \" + id);\n  }\n\n  render() {\n    let name = \"kitteh\";\n    let button = // Missing Code\n    return button;\n  }\n}\n",
     "options": [
       "`<button onClick={(name) => this.hug(name)}>Hug Button</button>`",
       "`<button onClick={this.hug(e, name)}>Hug Button</button>`",
@@ -462,7 +462,7 @@
   },
   {
     "question": "Currently, `handleClick` is being called instead of passed as a reference. How do you fix this?",
-    "code": "\n<button onClick={this.handleClick()}>Click this</button>",
+    "code": "<button onClick={this.handleClick()}>Click this</button>\n",
     "options": [
       "`<button onClick={this.handleClick.bind(handleClick)}>Click this</button>`",
       "`<button onClick={handleClick()}>Click this</button>`",
@@ -495,7 +495,7 @@
   },
   {
     "question": "What will happen when this useEffect Hook is executed, assuming name is not already equal to John?",
-    "code": "\nuseEffect(() => {\n  setName('John');\n}, [name]);",
+    "code": "useEffect(() => {\n  setName('John');\n}, [name]);\n",
     "options": [
       "It will cause an error immediately.",
       "It will execute the code inside the function, but only after waiting to ensure that no other component is accessing the name variable.",
@@ -517,7 +517,7 @@
   },
   {
     "question": "You have created a new method in a class component called handleClick, but it is not working. Which code is missing?",
-    "code": "\nclass Button extends React.Component{\n\n  constructor(props) {\n    super(props);\n    // Missing line\n  }\n\n  handleClick() {...}\n}",
+    "code": "class Button extends React.Component{\n\n  constructor(props) {\n    super(props);\n    // Missing line\n  }\n\n  handleClick() {...}\n}\n",
     "options": [
       "`this.handleClick.bind(this);`",
       "`props.bind(handleClick);`",
@@ -528,19 +528,19 @@
   },
   {
     "question": "React does not render two sibling elements unless they are wrapped in a fragment. Below is one way to render a fragment. What is the shorthand for this?",
-    "code": "\n<React.Fragment>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</React.Fragment>\n<...>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</...>\n<//>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n<///>\n<>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</>\n<Frag>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</Frag>",
+    "code": "<React.Fragment>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</React.Fragment>\n<...>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</...>\n<//>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n<///>\n<>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</>\n<Frag>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</Frag>\n",
     "options": ["A", "B", "C", "D"],
     "correctOptionIndex": 2
   },
   {
     "question": "If you wanted to display the count state value in the component, what do you need to add to the curly braces in the `h1`?",
-    "code": "\nclass Ticker extends React.component {\n  constructor(props) {\n    super(props);\n    this.state = { count: 0 };\n  }\n  render() {\n    return <h1>{}</h1>;\n  }\n}",
+    "code": "class Ticker extends React.component {\n  constructor(props) {\n    super(props);\n    this.state = { count: 0 };\n  }\n  render() {\n    return <h1>{}</h1>;\n  }\n}\n",
     "options": ["this.state.count", "count", "state", "state.count"],
     "correctOptionIndex": 0
   },
   {
     "question": "Per the following code, when is the Hello component displayed?",
-    "code": "\nconst greeting = isLoggedIn ? <Hello /> : null;",
+    "code": "const greeting = isLoggedIn ? <Hello /> : null;\n",
     "options": [
       "never",
       "when `isLoggedIn` is true",
@@ -551,13 +551,13 @@
   },
   {
     "question": "In the following code block, what type is orderNumber?",
-    "code": "\nReactDOM.render(<Message orderNumber=\"16\" />, document.getElementById('root'));",
+    "code": "ReactDOM.render(<Message orderNumber=\"16\" />, document.getElementById('root'));\n",
     "options": ["string", "boolean", "object", "number"],
     "correctOptionIndex": 0
   },
   {
     "question": "You have added a style property to the `h1` but there is an unexpected token error when it runs. How do you fix this?",
-    "code": "\nconst element = <h1 style={ backgroundColor: \"blue\" }>Hi</h1>;",
+    "code": "const element = <h1 style={ backgroundColor: \"blue\" }>Hi</h1>;\n",
     "options": [
       "`const element = <h1 style=\"backgroundColor: \"blue\"\"}>Hi</h1>;`",
       "`const element = <h1 style={{backgroundColor: \"blue\"}}>Hi</h1>;`",
@@ -579,7 +579,7 @@
   },
   {
     "question": "Consider the following component. What is the default color for the star?",
-    "code": "\nconst Star = ({ selected = false }) => <Icon color={selected ? 'red' : 'grey'} />;",
+    "code": "const Star = ({ selected = false }) => <Icon color={selected ? 'red' : 'grey'} />;\n",
     "options": ["black", "red", "grey", "white"],
     "correctOptionIndex": 2
   },
@@ -596,7 +596,7 @@
   },
   {
     "question": "hat is the difference between the click behaviors of these two buttons(assuming that this.handleClick is bound correctly)",
-    "code": "\n  A. <button onClick=this.handleClick>Click Me</button>\n  B. <button onClick={event => this.handleClick(event)}>Click Me</button>",
+    "code": "  A. <button onClick=this.handleClick>Click Me</button>\n  B. <button onClick={event => this.handleClick(event)}>Click Me</button>\n",
     "options": [
       "`Button A will not have access to the event object on click of the button`",
       "`Button A will not fire the handler this.handleClick successfully`",
@@ -607,7 +607,7 @@
   },
   {
     "question": "hat will happen when this useEffect Hook is executed, assuming name is not already equal to John?",
-    "code": "\nuseEffect(() => {\n  setName('John');\n}, [name]);",
+    "code": "useEffect(() => {\n  setName('John');\n}, [name]);\n",
     "options": [
       "`It will cause an error immediately.`",
       "`It will execute the code inside the function, but only after waiting to ensure that no other component is accessing the name variable.`",
@@ -618,19 +618,19 @@
   },
   {
     "question": "How would you add to this code, from React Router, to display a component called About?",
-    "code": "\n<Route path=\"/:id\" />\n<Route path=\"/:id\">\n  {' '}\n  <About />\n</Route>\n<Route path=\"/tid\" about={Component} />\n<Route path=\"/:id\" route={About} />\n<Route>\n  <About path=\"/:id\" />\n</Route>",
+    "code": "<Route path=\"/:id\" />\n<Route path=\"/:id\">\n  {' '}\n  <About />\n</Route>\n<Route path=\"/tid\" about={Component} />\n<Route path=\"/:id\" route={About} />\n<Route>\n  <About path=\"/:id\" />\n</Route>\n",
     "options": ["A", "B", "C", "D"],
     "correctOptionIndex": 0
   },
   {
     "question": "Which class-based component is equivalent to this function component?",
-    "code": "\nconst Greeting ({ name }) > <h1>Hello {name}!</h1>;\nclass Greeting extends React.Component {\n  constructor() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\nclass Greeting extends React.Component {\n  <h1>Hello {this.props.name}!</h1>;\n}\nclass Greeting extends React.Component {\n  render() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\nclass Greeting extends React.Component {\n  render({ name }) {\n    return <h1>Hello {name}!</h1>;\n  }\n}",
+    "code": "const Greeting ({ name }) > <h1>Hello {name}!</h1>;\nclass Greeting extends React.Component {\n  constructor() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\nclass Greeting extends React.Component {\n  <h1>Hello {this.props.name}!</h1>;\n}\nclass Greeting extends React.Component {\n  render() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\nclass Greeting extends React.Component {\n  render({ name }) {\n    return <h1>Hello {name}!</h1>;\n  }\n}\n",
     "options": ["A", "B", "C", "D"],
     "correctOptionIndex": 2
   },
   {
     "question": "Give the code below, what does the second argument that is sent to the render function describe?",
-    "code": "\nReactDOM.render(\n  <h1>Hi<h1>,\n    document.getElementById('root')\n)",
+    "code": "ReactDOM.render(\n  <h1>Hi<h1>,\n    document.getElementById('root')\n)\n",
     "options": [
       "where the React element should be added to the DOM",
       "where to call the function",
@@ -652,7 +652,7 @@
   },
   {
     "question": "What is the first argument, `x`, that is sent to the `createElement` function?",
-    "code": "\nReact.createElement(x, y, z);",
+    "code": "React.createElement(x, y, z);\n",
     "options": [
       "the element that should be created",
       "the order in which this element should be placed on the page",
@@ -663,7 +663,7 @@
   },
   {
     "question": "Which class-based lifecycle method would be called at the same time as this effect Hook?",
-    "code": "\nuseEffect(() => {\n  // do things\n}, []);",
+    "code": "useEffect(() => {\n  // do things\n}, []);\n",
     "options": [
       "componentWillUnmount",
       "componentDidMount",
@@ -674,7 +674,7 @@
   },
   {
     "question": "Given the code below, what does the second argument that is sent to the render function describe?",
-    "code": "\nReactDOM.render(<h1>Hi</h1>, document.getElementById('root'));",
+    "code": "ReactDOM.render(<h1>Hi</h1>, document.getElementById('root'));\n",
     "options": [
       "where the React element should be added to the DOM",
       "where to call the function",
@@ -696,13 +696,13 @@
   },
   {
     "question": "What is the name of this component?",
-    "code": "\nclass Comp extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}",
+    "code": "class Comp extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}\n",
     "options": ["Comp", "h1", "React.Component", "Component"],
     "correctOptionIndex": 0
   },
   {
     "question": "When using a portal, what is the first argument?",
-    "code": "\nReactDOM.createPortal(x, y);",
+    "code": "ReactDOM.createPortal(x, y);\n",
     "options": [
       "the current state",
       "the element to render",
@@ -713,7 +713,7 @@
   },
   {
     "question": "What is `setCount`?",
-    "code": "\nconst [count, setCount] = useState(0);",
+    "code": "const [count, setCount] = useState(0);\n",
     "options": [
       "the initial state value",
       "a variable",
@@ -724,7 +724,7 @@
   },
   {
     "question": "What is the use of map function below?",
-    "code": "\nconst database = [user1:{},user2:{},user3:{}];\ndatabase.map((user)=><h1>user.data</h1>);",
+    "code": "const database = [user1:{},user2:{},user3:{}];\ndatabase.map((user)=><h1>user.data</h1>);\n",
     "options": [
       "gives a map of all the entries in database",
       "returns a heading tag for every entry in the database containing it's data",
@@ -735,7 +735,7 @@
   },
   {
     "question": "Describe what is happening in this code?",
-    "code": "\nconst { name: firstName } = person;",
+    "code": "const { name: firstName } = person;\n",
     "options": [
       "It is creating a new object that contains the same name property as the person object.",
       "It is assigning the value of the person object's firstName property to a constant called name.",
@@ -746,7 +746,7 @@
   },
   {
     "question": "What is wrong with this code?",
-    "code": "\nconst MyComponent = ({ names }) => (\n  <h1>Hello</h1>\n  <p>Hello again</p>\n);",
+    "code": "const MyComponent = ({ names }) => (\n  <h1>Hello</h1>\n  <p>Hello again</p>\n);\n",
     "options": [
       "React components cannot be defined using functions.",
       "React does not allow components to return more than one element.",
@@ -757,7 +757,7 @@
   },
   {
     "question": "When using a portal, what is the second argument?",
-    "code": "\nReactDOM.createPortal(x, y);",
+    "code": "ReactDOM.createPortal(x, y);\n",
     "options": [
       "the App component",
       "the page",
@@ -768,7 +768,7 @@
   },
   {
     "question": "Given this code, what will be printed in the `<h1>` tag?",
-    "code": "\nconst MyComponent = ({ children }) => (\n  <h1>{children.length}</h1>\n);\n...\n<MyComponent>\n<p>Hello</p>\n<p>Goodbye</p>\n</MyComponent>",
+    "code": "const MyComponent = ({ children }) => (\n  <h1>{children.length}</h1>\n);\n...\n<MyComponent>\n<p>Hello</p>\n<p>Goodbye</p>\n</MyComponent>\n",
     "options": [
       "It will produce an error saying \"cannot read property \"length\" of undefined.\"",
       "1",
@@ -779,7 +779,7 @@
   },
   {
     "question": "What is this pattern called?",
-    "code": "\nconst [count, setCount] = useState(0);",
+    "code": "const [count, setCount] = useState(0);\n",
     "options": [
       "object destructuring",
       "array destructuring",
@@ -801,7 +801,7 @@
   },
   {
     "question": "The code below is rendering nothing, and there is an error that says \"ReactDOM is not defined.\" How do you fix this issue?",
-    "code": "\nimport React from 'react';\nimport { render } from 'react-dom';\n\nconst element = <h1>Hi</h1>;\n\nReactDOM.render(element, document.getElementById('root'));",
+    "code": "import React from 'react';\nimport { render } from 'react-dom';\n\nconst element = <h1>Hi</h1>;\n\nReactDOM.render(element, document.getElementById('root'));\n",
     "options": [
       "`render(element, document.getElementById(\"root\"));`",
       "`ReactDOM(element, document.getElementById(\"root\"));`",
@@ -812,7 +812,7 @@
   },
   {
     "question": "In this component, how do you display whether the user was logged in or not?",
-    "code": "\nrender() {\n  const isLoggedIn = this.state.isLoggedIn;\n  return (\n    <div>\n      The user is:\n    </div>\n  );\n}",
+    "code": "render() {\n  const isLoggedIn = this.state.isLoggedIn;\n  return (\n    <div>\n      The user is:\n    </div>\n  );\n}\n",
     "options": [
       "`The user is loggedIn ? logged in : not logged in.`",
       "Write a function to check the login status.",
@@ -845,7 +845,7 @@
   },
   {
     "question": "Add the code that will fire the photon torpedoes when the button is clicked.",
-    "code": "\nclass StarTrekkin extends React.Component {\n  firePhotonTorpedoes(e) {\n    console.log('pew pew');\n  }\n  render() {\n    return; // Missing code\n  }\n}",
+    "code": "class StarTrekkin extends React.Component {\n  firePhotonTorpedoes(e) {\n    console.log('pew pew');\n  }\n  render() {\n    return; // Missing code\n  }\n}\n",
     "options": [
       "`<button onClick={firePhotonTorpedoes()}>Pew Pew</button>`",
       "`<button onClick={firePhotonTorpedoes}>Pew Pew</button>`",
@@ -924,7 +924,7 @@
   },
   {
     "question": "What value of button will allow you to pass the name of the person to be hugged?",
-    "code": "\nclass Huggable extends React.Component {\n  hug(id) {\n    console.log(\"hugging \" + id);\n  }\n  render() {\n    let name = \"kitten\";\n    let button = // Missing code\n    return button;\n  }\n}",
+    "code": "class Huggable extends React.Component {\n  hug(id) {\n    console.log(\"hugging \" + id);\n  }\n  render() {\n    let name = \"kitten\";\n    let button = // Missing code\n    return button;\n  }\n}\n",
     "options": [
       "`<button onClick={(name) => this.hug(name)}>Hug Button</button>;`",
       "`<button onClick={this.hug(e, name)}>Hug Button</button>;`",
@@ -952,7 +952,7 @@
   },
   {
     "question": "In this function, which is the best way to describe the Dish component?",
-    "code": "\nfunction Dish() {\n  return (\n    <>\n      <Ingredient />\n      <Ingredient />\n    </>\n  );\n}",
+    "code": "function Dish() {\n  return (\n    <>\n      <Ingredient />\n      <Ingredient />\n    </>\n  );\n}\n",
     "options": [
       "child component",
       "parent component",
@@ -996,7 +996,7 @@
   },
   {
     "question": "How would you modify the constructor to fix this erroe: \"ReferenceError: Must call super constructor in derived class before accessing 'this'...\"?",
-    "code": "\nclass TransIsBeautiful extends React.Component {\n  constructor(props){\n  // Missing line\n  console.log(this) ;\n  }\n  ...\n}",
+    "code": "class TransIsBeautiful extends React.Component {\n  constructor(props){\n  // Missing line\n  console.log(this) ;\n  }\n  ...\n}\n",
     "options": [
       "render(props);",
       "super(props);",
@@ -1013,7 +1013,7 @@
   },
   {
     "question": "This code is part of an app that collects Pokemon. How would you print the list of the ones collected so far?",
-    "code": "\nconstructor(props) {\n    super(props);\n    this.state = {\n        pokeDex: []\n    };\n}",
+    "code": "constructor(props) {\n    super(props);\n    this.state = {\n        pokeDex: []\n    };\n}\n",
     "options": [
       "console.log(props.pokeDex);",
       "console.log(this.props.pokeDex);",
@@ -1024,7 +1024,7 @@
   },
   {
     "question": "What would be the result of running this code?",
-    "code": "\nfunction add(x = 1, y = 2) {\n  return x + y;\n}\n\nadd();",
+    "code": "function add(x = 1, y = 2) {\n  return x + y;\n}\n\nadd();\n",
     "options": ["null", "3", "0", "undefined"],
     "correctOptionIndex": 1
   },
