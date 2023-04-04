@@ -41,6 +41,7 @@ const QuestionViewer = () => {
     setCurrentQuestion(getRandomQuestion());
     setQuestionNumber((n) => n + 1);
     setSelectedRadio(null);
+    setTime(timeOutSecond);
   };
 
   const convertSecondsToMinutes = (sec: number): string => {
@@ -51,35 +52,40 @@ const QuestionViewer = () => {
   };
 
   if (time <= 0) {
-    setTime(timeOutSecond);
     handleNextClick();
   }
   return (
     <div>
       {questionNumber <= totalQuestions ? (
-        <div>
-          <span>{convertSecondsToMinutes(time)} </span>
-          <span>
-            {questionNumber}/{totalQuestions}
-          </span>
+        <div className="border-b-2 border-gray-400">
+          <div className="flex justify-between p-3 font-mono text-xl border-b-2 border-gray-400 mb-3">
+            <span>{convertSecondsToMinutes(time)}</span>
+            <span>
+              {questionNumber}/{totalQuestions}
+            </span>
+          </div>
+
           <SingleQuestion
             data={currentQuestion}
             selectedRadio={selectedRadio}
             setSelectedRadio={(i: number) => setSelectedRadio(i)}
           />
-          <button className="bg-blue-400" onClick={handleNextClick}>
+          <button
+            className="bg-gray-400 p-1 px-2 rounded m-3 hover:bg-gray-300"
+            onClick={handleNextClick}
+          >
             Next
           </button>
         </div>
       ) : (
-        <div>
+        <div className="m-3 text-center text-2xl">
           <p>Result</p>
-          <p>Correct Answer:{correctAnswer}</p>
+          <p className="my-5">Correct Answer : {correctAnswer}</p>
 
           {correctAnswer >= correctAnswersNeedsToPass ? (
-            <span>Pass</span>
+            <span className="text-green-600 font-bold">Passed</span>
           ) : (
-            <span>Fail</span>
+            <span className="text-red-600 font-bold">Failed</span>
           )}
         </div>
       )}
