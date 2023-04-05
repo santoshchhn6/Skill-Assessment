@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from "react";
-// import Questions from "../data/React.json";
 import SingleQuestion from "./SingleQuestion";
-import { QuestionType } from "../types";
+import { QuestionType, SovedQuestionType } from "../types";
 import { useLocation } from "react-router-dom";
+import Result from "./Result";
 
 const QuestionViewer = () => {
   const { state: Questions } = useLocation();
 
-  console.log({ Questions });
-
-  const totalQuestions = 15;
+  const totalQuestions = 3;
   const correctAnswersNeedsToPass = 10;
-  const timeOutSecond = 90;
+  const timeOutSecond = 5;
   const [questionNumber, setQuestionNumber] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState<QuestionType>();
   const [correctAnswer, setCorrectAnswer] = useState(0);
   const [previousIndex, setPreviousIndex] = useState<number[]>([]);
   const [selectedRadio, setSelectedRadio] = useState<number | null>(null);
   const [time, setTime] = useState<number>(timeOutSecond);
+  const [solvedQuestions, setSolvedQuestions] = useState<SovedQuestionType[]>(
+    []
+  );
 
   useEffect(() => {
     setCurrentQuestion(getRandomQuestion());
@@ -28,8 +29,9 @@ const QuestionViewer = () => {
     const interval = setInterval(() => {
       setTime((n) => n - 1);
     }, 1000);
+
     return () => clearInterval(interval);
-  }, [currentQuestion]);
+  }, []);
 
   function getRandomQuestion() {
     let index = Math.floor(Math.random() * Questions.length);
@@ -47,6 +49,12 @@ const QuestionViewer = () => {
     setQuestionNumber((n) => n + 1);
     setSelectedRadio(null);
     setTime(timeOutSecond);
+
+    const newSolvedQuestion = {
+      ...currentQuestion,
+      userChoosenOptionIndex: selectedRadio,
+    };
+    setSolvedQuestions((prev) => ({ ...prev, newSolvedQuestion }));
   };
 
   const convertSecondsToMinutes = (sec: number): string => {
@@ -83,16 +91,11 @@ const QuestionViewer = () => {
           </button>
         </div>
       ) : (
-        <div className="m-3 text-center text-2xl">
-          <p>Result</p>
-          <p className="my-5">Correct Answer : {correctAnswer}</p>
-
-          {correctAnswer >= correctAnswersNeedsToPass ? (
-            <span className="text-green-600 font-bold">Passed</span>
-          ) : (
-            <span className="text-red-600 font-bold">Failed</span>
-          )}
-        </div>
+        <Result
+          correctAnswer={correctAnswer}
+          correctAnswersNeedsToPass={correctAnswersNeedsToPass}
+          solvedQuestions={solvedQuestions}
+        />
       )}
     </div>
   );
