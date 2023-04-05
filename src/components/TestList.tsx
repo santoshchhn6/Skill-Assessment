@@ -33,26 +33,21 @@ const TestList = () => {
     navigate("/Test", { state: data });
   };
   return (
-    <div>
-      <h2 className="text-center font-bold p-3 bg-gray-200 text-gray-700 border-b-2 border-gray-600">
-        Skill Assessment
-      </h2>
-      <div className="flex justify-center gap-3 mt-10">
-        {buttons.map((e, i) => (
-          <div
-            key={i}
-            className="text-center cursor-pointer font-bold"
-            onClick={() => handleNavigation(e.title)}
-          >
-            <img
-              src={e.img}
-              alt=""
-              className="w-[100px] aspect-square object-contain ease-in-out duration-300 hover:scale-105 active:scale-95"
-            />
-            <p>{e.title}</p>
-          </div>
-        ))}
-      </div>
+    <div className="flex justify-center gap-3 mt-10">
+      {buttons.map((e, i) => (
+        <div
+          key={i}
+          className="text-center cursor-pointer font-bold"
+          onClick={() => handleNavigation(e.title)}
+        >
+          <img
+            src={e.img}
+            alt=""
+            className="w-[100px] aspect-square object-contain ease-in-out duration-300 hover:scale-105 active:scale-95"
+          />
+          <p>{e.title}</p>
+        </div>
+      ))}
     </div>
   );
 };

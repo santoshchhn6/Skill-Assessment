@@ -12,7 +12,6 @@ const Result = ({
 }: Props) => {
   const navigate = useNavigate();
 
-  console.log({ solvedQuestions });
   return (
     <div className="m-3 text-center text-2xl">
       <p>Result</p>

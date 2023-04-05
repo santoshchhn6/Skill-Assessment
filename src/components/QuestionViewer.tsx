@@ -7,11 +7,17 @@ import Result from "./Result";
 const QuestionViewer = () => {
   const { state: Questions } = useLocation();
 
-  const totalQuestions = 3;
+  const totalQuestions = 15;
   const correctAnswersNeedsToPass = 10;
-  const timeOutSecond = 5;
+  const timeOutSecond = 90;
   const [questionNumber, setQuestionNumber] = useState(1);
-  const [currentQuestion, setCurrentQuestion] = useState<QuestionType>();
+  const [currentQuestion, setCurrentQuestion] = useState<QuestionType>({
+    question: "",
+    code: "",
+    options: [],
+    correctOptionIndex: 0,
+  });
+
   const [correctAnswer, setCorrectAnswer] = useState(0);
   const [previousIndex, setPreviousIndex] = useState<number[]>([]);
   const [selectedRadio, setSelectedRadio] = useState<number | null>(null);
@@ -50,11 +56,11 @@ const QuestionViewer = () => {
     setSelectedRadio(null);
     setTime(timeOutSecond);
 
-    const newSolvedQuestion = {
+    const newSolvedQuestion: SovedQuestionType = {
       ...currentQuestion,
       userChoosenOptionIndex: selectedRadio,
     };
-    setSolvedQuestions((prev) => ({ ...prev, newSolvedQuestion }));
+    setSolvedQuestions((prev) => [...prev, newSolvedQuestion]);
   };
 
   const convertSecondsToMinutes = (sec: number): string => {
