@@ -31,7 +31,7 @@ const SolvedQuestions = () => {
                   data.userChoosenOptionIndex &&
                   data.userChoosenOptionIndex !== data.correctOptionIndex &&
                   data.userChoosenOptionIndex === i
-                    ? "bg-red-400"
+                    ? "bg-red-500"
                     : ""
                 } ${data.correctOptionIndex === i ? "bg-green-400" : ""}`}
               >

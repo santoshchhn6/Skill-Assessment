@@ -44,6 +44,7 @@ const convertMDToJSON = () => {
           code = "";
           options = [];
           correctOptionIndex = 0;
+          optionIndex = 0;
         }
         question = str[i].slice(str[i].indexOf(".") + 2);
 
@@ -53,10 +54,10 @@ const convertMDToJSON = () => {
       if (str[i].startsWith("- [")) {
         if (str[i].startsWith("- [x")) {
           correctOptionIndex = optionIndex;
-          console.log(correctOptionIndex);
+          // console.log(correctOptionIndex);
         }
         options.push(str[i].slice(6));
-        optionIndex = optionIndex + 1 <= 3 ? optionIndex + 1 : 0;
+        optionIndex++;
         // console.log(options);
       }
 

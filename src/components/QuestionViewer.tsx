@@ -85,6 +85,7 @@ const QuestionViewer = () => {
           </div>
 
           <SingleQuestion
+            questionNumber={questionNumber}
             data={currentQuestion}
             selectedRadio={selectedRadio}
             setSelectedRadio={(i: number) => setSelectedRadio(i)}
