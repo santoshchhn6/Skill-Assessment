@@ -41,7 +41,10 @@ const QuestionViewer = () => {
 
   function getRandomQuestion() {
     let index = Math.floor(Math.random() * Questions.length);
-    if (previousIndex.includes(index)) getRandomQuestion();
+
+    while (previousIndex.includes(index)) {
+      index = Math.floor(Math.random() * Questions.length);
+    }
     setPreviousIndex((prev) => [...prev, index]);
     return Questions[index];
   }
@@ -73,6 +76,8 @@ const QuestionViewer = () => {
   if (time <= 0) {
     handleNextClick();
   }
+
+  console.log({ previousIndex });
   return (
     <div>
       {questionNumber <= totalQuestions ? (

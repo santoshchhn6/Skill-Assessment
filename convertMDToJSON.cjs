@@ -19,6 +19,7 @@ const convertMDToJSON = () => {
     let firstLine = false;
 
     let options = [];
+    let readingOption = false;
     let correctOptionIndex = 0;
 
     //reading data line by line
