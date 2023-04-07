@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import SingleQuestion from "./SingleQuestion";
 import { QuestionType, SovedQuestionType } from "../types";
-import { useLocation } from "react-router-dom";
-import Result from "./Result";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const QuestionViewer = () => {
+  const navigate = useNavigate();
   const { state: Questions } = useLocation();
 
   const totalQuestions = 15;
-  const correctAnswersNeedsToPass = 10;
+  const passingPercentage = 75;
+  const correctAnswersNeedsToPass = Math.floor(
+    (totalQuestions * passingPercentage) / 100
+  );
   const timeOutSecond = 90;
   const [questionNumber, setQuestionNumber] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState<QuestionType>({
@@ -77,40 +80,47 @@ const QuestionViewer = () => {
     handleNextClick();
   }
 
-  console.log({ previousIndex });
-  return (
-    <div>
-      {questionNumber <= totalQuestions ? (
-        <div className="border-b-2 border-gray-400">
-          <div className="flex justify-between p-3 font-mono text-xl border-b-2 border-gray-400 mb-3">
-            <span>{convertSecondsToMinutes(time)}</span>
-            <span>
-              {questionNumber}/{totalQuestions}
-            </span>
-          </div>
+  const renderQuestion = () => {
+    if (questionNumber <= totalQuestions) {
+      return (
+        <div>
+          <div className="border-b-2 border-gray-400">
+            <div className="flex justify-between p-3 font-mono text-xl border-b-2 border-gray-400 mb-3">
+              <span>{convertSecondsToMinutes(time)}</span>
+              <span>
+                {questionNumber}/{totalQuestions}
+              </span>
+            </div>
 
-          <SingleQuestion
-            questionNumber={questionNumber}
-            data={currentQuestion}
-            selectedRadio={selectedRadio}
-            setSelectedRadio={(i: number) => setSelectedRadio(i)}
-          />
-          <button
-            className="bg-gray-400 p-1 px-2 rounded m-3 hover:bg-gray-300"
-            onClick={handleNextClick}
-          >
-            Next
-          </button>
+            <SingleQuestion
+              questionNumber={questionNumber}
+              data={currentQuestion}
+              selectedRadio={selectedRadio}
+              setSelectedRadio={(i: number) => setSelectedRadio(i)}
+            />
+            <button
+              className="bg-gray-400 p-1 px-2 rounded m-3 hover:bg-gray-300"
+              onClick={handleNextClick}
+            >
+              Next
+            </button>
+          </div>
         </div>
-      ) : (
-        <Result
-          correctAnswer={correctAnswer}
-          correctAnswersNeedsToPass={correctAnswersNeedsToPass}
-          solvedQuestions={solvedQuestions}
-        />
-      )}
-    </div>
-  );
+      );
+    } else {
+      navigate("/Result", {
+        state: {
+          totalQuestions,
+          correctAnswer,
+          correctAnswersNeedsToPass,
+          solvedQuestions,
+        },
+      });
+      return null;
+    }
+  };
+
+  return <div>{renderQuestion()}</div>;
 };
 
 export default QuestionViewer;

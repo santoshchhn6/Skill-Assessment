@@ -1,20 +1,22 @@
 import { useNavigate } from "react-router-dom";
 import { SovedQuestionType } from "../types";
-type Props = {
-  correctAnswer: number;
-  correctAnswersNeedsToPass: number;
-  solvedQuestions: SovedQuestionType[];
-};
-const Result = ({
-  correctAnswer,
-  correctAnswersNeedsToPass,
-  solvedQuestions,
-}: Props) => {
+import { useLocation } from "react-router-dom";
+
+const Result = () => {
+  const { state } = useLocation();
+  const {
+    totalQuestions,
+    correctAnswer,
+    correctAnswersNeedsToPass,
+    solvedQuestions,
+  } = state;
   const navigate = useNavigate();
 
+  console.log("result");
   return (
     <div className="m-3 text-center text-2xl">
       <p>Result</p>
+      <p className="my-5">Total Questions : {totalQuestions}</p>
       <p className="my-5">Correct Answer : {correctAnswer}</p>
 
       {correctAnswer >= correctAnswersNeedsToPass ? (
